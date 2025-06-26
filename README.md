@@ -5,7 +5,7 @@ I am a passionate data enthusiast with a strong background in Python. Over the y
 # Python projects
 In this repository, you will find a variety of SQL projects, including:
 
-1. 📦 [**DTDC Market Modeling**]: This project analyzes delivery data to identify logistical inefficiencies, optimize route performance, and uncover high-demand corridors across Indian states. Using Python-based analytics and visualizations, the project delivers actionable insights to enhance DTDC’s operational efficiency and strategic planning.
+1. 📦 [**DTDC Market Modeling**](https://github.com/dwaipayan-bond013/Python-Data-Analysis-Projects/tree/main/DTDC%20Market%20Modelling): This project analyzes delivery data to identify logistical inefficiencies, optimize route performance, and uncover high-demand corridors across Indian states. Using Python-based analytics and visualizations, the project delivers actionable insights to enhance DTDC’s operational efficiency and strategic planning.
    
 2. 🏍️ [**Go Bike Rent Analysis**]: The project explores user behavior, rental patterns, and bike utilization across different times and locations. Through data visualization and statistical analysis, the project uncovers trends to help optimize fleet management and improve customer experience.
    
