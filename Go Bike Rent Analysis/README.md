@@ -66,8 +66,26 @@ This project addresses these needs through **data exploration**, **visual storyt
       
 3. Weather wise count Analysis
 
-   ![](weatherwise_casual_count_analysis.PNG)
-   ![](weatherwise_count_analysis.PNG)
+   ![](weatherwise_casual_count_analysis1.PNG)
+   ![](weatherwise_count_analysis1.PNG)
+
+   Casual Users
+
+Rides drop drastically in bad weather: from 1.18M in clear sky to 158 in heavy rain.
+
+📊 Registered Users
+
+Less impacted than casual users, but still decline with poor weather.
+
+✅ Recommendations
+
+Implement weather-sensitive pricing or pause policies.
+
+Display real-time weather alerts in app.
+
+Offer co-promotions with public transport during bad weather.
+
+
 
 
    
