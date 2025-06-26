@@ -66,6 +66,9 @@ This project addresses these needs through **data exploration**, **visual storyt
       
 3. Weather wise count Analysis
 
+   ![](weatherwise_casual_count_analysis.PNG)
+   ![](weatherwise_count_analysis.PNG)
+
 
    
 
