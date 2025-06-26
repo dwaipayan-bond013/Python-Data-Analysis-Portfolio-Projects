@@ -40,7 +40,36 @@ This project addresses these needs through **data exploration**, **visual storyt
     - Increase fleet size in summer/fall to meet casual demand
     - Provide seasonal passes or loyalty rewards for registered users
     - Consider season-specific insurance, accessories, and safety campaigns
-    - 
+      
+2. Year and Month wise count Analysis
+
+   ![](monthwise_registered_user_analysis.PNG)
+   ![](monthwise_casual_user_analysis.PNG)
+
+   Business Insights:
+    - Casual Users:
+      - Sharp increase from March to peak in June to August, then a decline
+      - April to September show the highest casual activity
+      - Casual rentals in 2012 were significantly higher than 2011 across all months
+    - Registered Users:
+      - High and stable usage throughout the year
+      - June to October are top-performing months, each crossing ~100,000 rides in 2012
+      - Registered users doubled from 2011 to 2012 in many months
+    - Casual usage is seasonal and leisure-driven
+    - Registered usage is stable, habitual, and commute-driven
+
+   Recommendations:
+    - Launch tourist/short-term promotions between April and September
+    - Offer discounted monthly subscriptions in early spring to convert casual to registered users
+    - Scale up bike and station availability in summer months
+    - Reinforce bike maintenance and inspection processes in June–August
+      
+3. Weather wise count Analysis
+
+
+   
+
+
 
 ## 📁 Files
 
