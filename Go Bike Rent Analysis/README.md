@@ -1,3 +1,4 @@
+
 # 🚲 GoBike Rental Analysis
 ![](gobikes_india_cover.jpg)
 ---
@@ -69,22 +70,142 @@ This project addresses these needs through **data exploration**, **visual storyt
    ![](weatherwise_casual_count_analysis1.PNG)
    ![](weatherwise_count_analysis1.PNG)
 
-   Casual Users
+   Business Insights:
+    - Casual Users rides drop drastically in bad weather: from 1.18M in clear sky to 158 in heavy rain
+    - Less impacted than casual users, but still decline with poor weather
 
-Rides drop drastically in bad weather: from 1.18M in clear sky to 158 in heavy rain.
+   Recommendations:
+    - Implement weather-sensitive pricing or pause policies
+    - Display real-time weather alerts in app
+    - Offer co-promotions with public transport during bad weather
 
-📊 Registered Users
+4. Weekday vs WorkingDay count analysis
 
-Less impacted than casual users, but still decline with poor weather.
+   ![](type_of_daywise_analysis.PNG)
 
-✅ Recommendations
+   Business Insights:
+    - Registered Users strongly prefer for working days — commuting trend
+    - Casual Users strongly prefer higher usage on holidays/weekends — leisure behavior
 
-Implement weather-sensitive pricing or pause policies.
+   Recommendations:
+    - Target registered users with weekday perks (e.g., partner coffee shops)
+    - Weekend/holiday discounted ride passes for casual users
+    - Shift more bikes to tourist hubs on weekends
 
-Display real-time weather alerts in app.
+5. Outlier Analysis
 
-Offer co-promotions with public transport during bad weather.
+   Based on numerical features analysis:
 
+   ![](boxplot_of_inumerical_valued_columns.PNG)
+
+   Business Insights:
+    - Humidity
+      - Distribution: Fairly wide, ranging from ~0 to ~100%
+      - Outliers: A few outliers present at the low end (around 0–10%)
+      - Most humidity readings are within a reasonable range (around 40%–90%)
+      - Very low humidity levels are rare and could represent sensor errors or unusual weather conditions
+
+   - Temperature (temp)
+      - Distribution: Uniform spread from ~0°C to ~40°C
+      - Outliers: None
+      - Wide range indicates seasonality effects (winter to summer)
+
+   - Windspeed
+      - Distribution: Most values between 0–30 km/h, but several high-value outliers (~50+)
+      - Outliers: Many extreme values
+      - Wind speed shows significant outliers, possibly due to storms or data recording issues
+      - Investigate whether these outliers are valid
+        
+  Recommendations:
+   - Monitor weather conditions—particularly wind—for adjusting supply/demand forecasting or pricing
+
+   Based on categorical features analysis:
+
+   ![](BoxplotofCategoricalValuedColumns.PNG)
+
+   Observation:
+   
+
+Median rental counts are highest in Summer and Fall, followed by Spring and Winter.
+
+Summer & Fall have higher upper whiskers and more frequent high-rental days.
+
+Business Insight:
+
+Demand is highest in Summer and Fall.
+
+Marketing, inventory, and operational planning should focus on these peak seasons.
+
+Winter has lowest variability, suggesting more consistent (but lower) usage.
+
+🟧 2. Holiday
+Observation:
+
+Median rentals on non-holidays (0) are higher than holidays.
+
+Holidays show lower distribution and fewer outliers on the higher end.
+
+Business Insight:
+
+Bike demand drops during holidays, possibly due to fewer commuters or people traveling out of town.
+
+Business should not over-allocate bikes on holidays and focus on leisure segments.
+
+🟦 3. Working Day
+Observation:
+
+Slightly higher median rentals on working days.
+
+More consistent demand and high-rental outliers on working days.
+
+Business Insight:
+
+Working days have higher and more stable demand, supporting the idea that people commute using bikes.
+
+Promotions targeting commuters (office-goers) are strategic.
+
+🟨 4. Weather
+Observation:
+
+Best demand on weather=1 (Clear/Fair) days.
+
+Steep drop for weather=2 (Mist/Cloudy).
+
+Rentals are very low for weather=3 (Light Rain/Snow) and nearly absent for weather=4 (Heavy Rain).
+
+Business Insight:
+
+Weather is a major driver of rental behavior.
+
+Rentals drop >50% on rainy/snowy days.
+
+Suggest:
+
+Dynamic pricing or offering discounts on light rain days.
+
+Avoid overstocking bikes during predicted bad weather.
+
+🟪 5. Year
+Observation:
+
+Median rentals in 2012 are significantly higher than 2011.
+
+More high-rental outliers in 2012.
+
+Business Insight:
+
+Business grew strongly in 2012—demand increased.
+
+Likely due to:
+
+Increased awareness
+
+Service improvements or expansions
+
+Better marketing
+
+Suggest comparing marketing campaigns, station expansions, or user base growth between years.
+   
 
 
 
