@@ -7,7 +7,7 @@ In this repository, you will find a variety of SQL projects, including:
 
 1. 📦 [**DTDC Market Modeling**](https://github.com/dwaipayan-bond013/Python-Data-Analysis-Projects/tree/main/DTDC%20Market%20Modelling): This project analyzes delivery data to identify logistical inefficiencies, optimize route performance, and uncover high-demand corridors across Indian states. Using Python-based analytics and visualizations, the project delivers actionable insights to enhance DTDC’s operational efficiency and strategic planning.
    
-2. 🏍️ [**Go Bike Rent Analysis**]: The project explores user behavior, rental patterns, and bike utilization across different times and locations. Through data visualization and statistical analysis, the project uncovers trends to help optimize fleet management and improve customer experience.
+2. 🏍️ [**Go Bike Rent Analysis**](https://github.com/dwaipayan-bond013/Python-Data-Analysis-Projects/tree/main/Go%20Bike%20Rent%20Analysis): The project explores user behavior, rental patterns, and bike utilization across different times and locations. Through data visualization and statistical analysis, the project uncovers trends to help optimize fleet management and improve customer experience.
    
 3. 🌾 [**Cargill Crop Analysis**]: The project focuses on evaluating crop yield patterns, climate impact, and regional agricultural trends using historical data. Leveraging Python-based analytics, it provides insights to enhance crop planning, resource allocation, and sustainable farming strategies.
    
