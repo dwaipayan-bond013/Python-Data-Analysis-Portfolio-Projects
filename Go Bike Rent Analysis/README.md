@@ -308,4 +308,5 @@ These behavioral patterns were validated through statistical hypothesis testing.
 
 From a business perspective, GoBike can leverage these insights to improve performance and customer satisfaction. Strategies such as commuter-focused weekday promotions, seasonal marketing campaigns for casual riders, and dynamic fleet allocation based on weather and seasonal forecasts can significantly enhance operations and profitability.
 
-
+## Contact
+For questions or collaboration inquiries, feel free to reach out via [dwaipayan.saha1997@gmail.com](dwaipayan.saha1997@gmail.com) or [Linkedin](https://www.linkedin.com/in/dwaipayan-s-9080a689/)
