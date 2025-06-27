@@ -189,14 +189,30 @@ This project addresses these needs through **data exploration**, **visual storyt
 
 7. Scatterplots between dependent and independent variables
 
+ - In all scatter plots (Humidity, Windspeed, Temperature), Registered Users consistently outnumber Casual Users across the vast majority of the data points. This suggests a strong core user base.
+
    - Temperature vs Count of users
       ![](ScatterplotofTemperaturevsUsers.PNG)
 
+   - Optimal Range: The highest number of users are observed when temperatures are approximately between 15°C and 30°C (or roughly 60°F to 85°F). This represents comfortable outdoor temperatures
+   - Impact of Extreme Temperatures: Both very cold (below 10°C) and very hot (above 35°C) temperatures lead to a significant decrease in user activity
+   - This is a crucial factor. Marketing campaigns and service availability should align with favorable temperature ranges. For example, offer discounts or special promotions during periods of optimal temperatures to maximize usage. During extreme temperatures, focus on retention strategies or alternative services if available
+
    - Humidity vs Count of users
+     
       ![](ScatterplotofHumidityvsUsers.PNG)
+     
+   - Optimal Range: The highest number of users (both registered and casual) are observed when humidity is roughly between 20% and 70%
+   - Impact of Extreme Humidity:User counts significantly drop when humidity is very low (below 10-20%) or very high (above 80%). This is particularly noticeable for both registered and casual users
+   - If the service is outdoor-related (e.g., bike sharing), understanding optimal humidity levels can help in resource allocation and marketing efforts. For instance, more bikes/resources might be needed on days with moderate humidity. Promotions could be targeted during these periods
 
    - Wndspeed vs Count of users
-       ![](ScatterplotofWindspeedvsUsers.PNG)
+      ![](ScatterplotofWindspeedvsUsers.PNG)
+
+   - Optimal Range: User activity is generally higher at lower wind speeds, peaking around 10-20 mph
+   - As wind speed increases beyond 20-25 mph, user counts, especially for casual users, show a noticeable decline. At very high wind speeds (above 40 mph), usage is minimal
+   - High winds affects usage. If the service involves physical activity outdoors, consider weather alerts or alternative indoor options/promotions during high wind conditions. This information can also inform safety guidelines if applicable
+
 
    
 
