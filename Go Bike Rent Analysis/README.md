@@ -123,88 +123,83 @@ This project addresses these needs through **data exploration**, **visual storyt
 
    ![](BoxplotofCategoricalValuedColumns.PNG)
 
-   Observation:
+  - Business Insights:
+     - Season
+       - Median rental counts are highest in Summer and Fall, followed by Spring and Winter
+       - Summer & Fall have higher upper whiskers and more frequent high-rental days
+       - Demand is highest in Summer and Fall
+       - Marketing, inventory, and operational planning should focus on these peak seasons
+       - Winter has lowest variability, suggesting more consistent (but lower) usage
+
+    - Holiday
+      - Median rentals on non-holidays (0) are higher than holidays
+      - Holidays show lower distribution and fewer outliers on the higher end
+      - Bike demand drops during holidays, possibly due to fewer commuters or people traveling out of town
+      - Business should not over-allocate bikes on holidays and focus on leisure segments
+
+    - Working Day
+      - Slightly higher median rentals on working days
+      - More consistent demand and high-rental outliers on working days
+      - Working days have higher and more stable demand, supporting the idea that people commute using bikes
+      - Promotions targeting commuters (office-goers) are strategic
+       
+    - Weather
+      - Best demand on weather=1 (Clear/Fair) days
+      - Steep drop for weather=2 (Mist/Cloudy) days
+      - Rentals are very low for weather=3 (Light Rain/Snow) and nearly absent for weather=4 (Heavy Rain)
+      - Weather is a major driver of rental behavior
+      - Rentals drop >50% on rainy/snowy days
+      - Dynamic pricing or offering discounts on light rain days
+      - Overstocking bikes during predicted bad weather should be avoided
+
+    - Year
+      - Median rentals in 2012 are significantly higher than 2011
+      - More high-rental outliers in 2012
+      - Business grew strongly in 2012—demand increased
+
+6. Categorising numerical inputs and counting users based on the numerical inputs
+
+   ![](CountofNumericalcategorisedValues.PNG)
+
+   - Detailed Insights:
+     - Average Count by Temperature Range
+       - There's a clear positive correlation between temperature and the average count. As temperatures increase, the average count also steadily increases. The highest average counts are observed in the warmer temperature ranges, specifically around 28-42°C for temp and 32-46°C for atemp.
+       - Expect the highest demand or activity during warmer periods. This is critical for resource allocation (e.g., staffing, inventory, vehicle availability for a service like bike rentals).
+       - Warm weather is an ideal time for promotions and marketing campaigns to capitalize on the higher natural demand.
+       - Ensure that services are fully operational and well-maintained in anticipation of peak demand during these warmer months.
+       - India experiences significant variations in temperature. Knowing these optimal ranges helps target specific seasons or regions for increased focus.
+       - 
+   - Average Count by Humidity Range:
+       - The average count peaks at moderate humidity levels (specifically, the 20.0-30.0% and 30.0-40.0% ranges), where it reaches the highest levels. As humidity either drops very low (below 10%) or rises significantly above 40-50%, the average count tends to decrease
+       - Users seem most active or comfortable when humidity is moderate. Very dry or very humid conditions affect usage.
+
+   - Average Count by Windspeed Range:
+       - The average count appears to be relatively high across a broad range of moderate wind speeds (approximately 11.399 to 34.198 mph), with the highest counts observed around 17.099 to 28.498 mph. However, very low wind speeds (below 5-7 mph) and very high wind speeds (above 40 mph) show a decrease in the average count
+       - Users prefer moderate wind conditions rather than completely still or excessively windy conditions. Very strong winds clearly act as a deterrent
+       - For outdoor services, high wind speeds can be a safety concern or simply uncomfortable, leading to reduced engagement
+       - If relevant, providing real-time wind speed information could help users plan their activities or choose appropriate times
+       - If high winds are frequent, explore strategies to make the service more appealing or safer (e.g.,offering wind-resistant gear)
+
+  - Overall Business Recommendations:
+     - Dynamic Resource Management: Use these insights to implement dynamic resource allocation. For example, increase staff, inventory, or operational hours during periods of optimal temperature, moderate humidity, and moderate wind speeds. Reduce resources during adverse conditions
+     - Run promotions and targeted ads specifically during favorable weather conditions
+     - Offer incentives or alternative solutions during unfavorable weather to maintain engagemen
+     - Since service is weather-dependent, consider integrating real-time weather forecasts into your customer-facing platforms
+     - Strategic Planning: Use these insights for long-term strategic planning, such as determining the best seasons for major product launches, expansions, or maintenance activities
+
+7. Scatterplots between dependent and independent variables
+
+   - Temperature vs Count of users
+      ![](ScatterplotofTemperaturevsUsers.PNG)
+
+   - Humidity vs Count of users
+      ![](ScatterplotofHumidityvsUsers.PNG)
+
+   - Wndspeed vs Count of users
+       ![](ScatterplotofWindspeedvsUsers.PNG)
+
    
 
-Median rental counts are highest in Summer and Fall, followed by Spring and Winter.
-
-Summer & Fall have higher upper whiskers and more frequent high-rental days.
-
-Business Insight:
-
-Demand is highest in Summer and Fall.
-
-Marketing, inventory, and operational planning should focus on these peak seasons.
-
-Winter has lowest variability, suggesting more consistent (but lower) usage.
-
-🟧 2. Holiday
-Observation:
-
-Median rentals on non-holidays (0) are higher than holidays.
-
-Holidays show lower distribution and fewer outliers on the higher end.
-
-Business Insight:
-
-Bike demand drops during holidays, possibly due to fewer commuters or people traveling out of town.
-
-Business should not over-allocate bikes on holidays and focus on leisure segments.
-
-🟦 3. Working Day
-Observation:
-
-Slightly higher median rentals on working days.
-
-More consistent demand and high-rental outliers on working days.
-
-Business Insight:
-
-Working days have higher and more stable demand, supporting the idea that people commute using bikes.
-
-Promotions targeting commuters (office-goers) are strategic.
-
-🟨 4. Weather
-Observation:
-
-Best demand on weather=1 (Clear/Fair) days.
-
-Steep drop for weather=2 (Mist/Cloudy).
-
-Rentals are very low for weather=3 (Light Rain/Snow) and nearly absent for weather=4 (Heavy Rain).
-
-Business Insight:
-
-Weather is a major driver of rental behavior.
-
-Rentals drop >50% on rainy/snowy days.
-
-Suggest:
-
-Dynamic pricing or offering discounts on light rain days.
-
-Avoid overstocking bikes during predicted bad weather.
-
-🟪 5. Year
-Observation:
-
-Median rentals in 2012 are significantly higher than 2011.
-
-More high-rental outliers in 2012.
-
-Business Insight:
-
-Business grew strongly in 2012—demand increased.
-
-Likely due to:
-
-Increased awareness
-
-Service improvements or expansions
-
-Better marketing
-
-Suggest comparing marketing campaigns, station expansions, or user base growth between years.
    
 
 
