@@ -222,74 +222,73 @@ Business Insight:
 
 ## Overall outcomes and Recommendations:
 
-🚚 1. Optimize Operations in Key Hubs
+ 1. Optimize Operations in Key Hubs
 Observation: Locations like Bilaspur (Haryana), Mankoli (Maharashtra), and Nelmangla (Karnataka) dominate both as source and destination hubs.
 
-✅ Recommendation:
+ Recommendation:
    - Invest in expanding infrastructure and manpower at these critical nodes
    - Implement automated sorting and tracking systems to manage high volumes efficiently
    - Monitor these hubs for early identification of delays or operational bottlenecks
 
-🗓️ 2. Align Resource Planning with Weekday Patterns
+ 2. Align Resource Planning with Weekday Patterns
 Observation: Delivery volumes peak mid-week (Wed–Thu: >32.5%) and are lowest on Tuesdays (12%)
 
-✅ Recommendation:
+ Recommendation:
    - Allocate more delivery staff, vehicles, and support resources mid-week to meet demand
    - Use off-peak days (Tuesdays, weekends) for route testing, training, or maintenance activities
 
-📦 3. Plan for Seasonal Demand Surges
+ 3. Plan for Seasonal Demand Surges
 Observation: ~87% of trips occur in September, indicating strong seasonal spikes
 
-✅ Recommendation:
+ Recommendation:
    - Prepare a seasonal staffing and fleet augmentation plan for Q3
    - Pre-position inventory in high-demand zones in August for proactive delivery
 
-🧭 4. Minimize Actual vs OSRM Time and Distance Gaps
+ 4. Minimize Actual vs OSRM Time and Distance Gaps
 Observation: Actual delivery times and distances are consistently higher than OSRM estimates across most states
 
-✅ Recommendation:
+ Recommendation:
    - Conduct route audits and update mapping tools with real-time road intelligence
    - Use AI-driven route optimization software that factors in traffic, roadblocks, and toll routes
    - Partner with local logistics partners in high-deviation regions (e.g., Assam, Haryana)
 
-🛣️ 5. Improve Full-Truckload (FTL) Efficiency
+ 5. Improve Full-Truckload (FTL) Efficiency
 Observation: FTL routes show major delays compared to planned OSRM time (by over 25–30%)
 
-✅ Recommendation:
+ Recommendation:
    - Implement better loading/unloading protocols and monitor dwell times
    - Consider breaking FTLs into smaller shipments (LTL) where FTL is causing time loss
    - Track FTL routes with GPS and geofencing to ensure schedule adherence
 
-🗺️ 6. Expand in Low-Penetration States
+ 6. Expand in Low-Penetration States
 Observation: States like Tripura, Mizoram, and Nagaland have negligible delivery volumes (<10 trips)
 
-✅ Recommendation:
+ Recommendation:
    - Evaluate strategic partnerships or franchise models to expand reach in underserved regions
    - Introduce incentivized delivery models or micro-warehousing to boost market entry
 
-🕒 7. Define and Improve SLA Compliance
+ 7. Define and Improve SLA Compliance
 Observation: Significant deviation from planned time metrics can impact SLA commitments
 
-✅ Recommendation:
+ Recommendation:
    - Establish clear SLA definitions for different route types (FTL, carting)
    - Monitor SLA compliance rates by route, state, and mode, and flag underperforming lanes
 
-🔄 8. Balance Source-Destination Network Load
+ 8. Balance Source-Destination Network Load
 Observation: Delivery loads are heavy in Maharashtra and Karnataka both inbound and outbound
 
-✅ Recommendation:
+ Recommendation:
    - Use reverse logistics strategies to optimize truck utilization on return routes
    - Balance distribution load by exploring secondary hubs in adjacent states (e.g., Gujarat, MP)
 
 ---
 
-## 🧠 Conclusion
+##  Conclusion
 
 The DTDC delivery analysis reveals key operational patterns, regional dependencies, and performance gaps. High-volume hubs like Bilaspur, Mankoli, and Nelmangla are central to the network and demand enhanced infrastructure and resource allocation. Delivery volumes peak mid-week and in September, indicating the need for dynamic staffing and seasonal planning. Significant discrepancies between planned (OSRM) and actual delivery times/distances highlight the need for better route optimization and SLA monitoring. Lastly, low delivery activity in northeastern and smaller states presents expansion opportunities. Overall, a data-driven strategy can enhance service efficiency, reduce delays, and improve customer satisfaction across the network.
----
 
-## 📬 Contact
+## Contact
 
-For questions or collaboration inquiries, feel free to reach out via [LinkedIn](dwaipayan.saha1997@gmail.com) or open an issue in this repo.
+For questions or collaboration inquiries, feel free to reach out via [dwaipayan.saha1997@gmail.com](dwaipayan.saha1997@gmail.com) or [Linkedin](https://www.linkedin.com/in/dwaipayan-s-9080a689/)
 
 
