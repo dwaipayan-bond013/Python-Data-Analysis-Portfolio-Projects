@@ -3,7 +3,7 @@ Welcome to my  Python portfolio repository! Here you'll find a collection of Pyt
 # About Me
 I am a passionate data enthusiast with a strong background in Python. Over the years, I have utilised my skills in writing and optimizing complex codes, and leveraging Python's powerful features to extract meaningful insights from data. This portfolio serves as a testament to my proficiency in Python and demonstrates my ability to tackle real-world data challenges. 
 # Python projects
-In this repository, you will find a variety of SQL projects, including:
+In this repository, you will find a variety of Python projects, including:
 
 1. 📦 [**DTDC Market Modeling**](https://github.com/dwaipayan-bond013/Python-Data-Analysis-Projects/tree/main/DTDC%20Market%20Modelling): This project analyzes delivery data to identify logistical inefficiencies, optimize route performance, and uncover high-demand corridors across Indian states. Using Python-based analytics and visualizations, the project delivers actionable insights to enhance DTDC’s operational efficiency and strategic planning.
    
