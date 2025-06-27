@@ -125,7 +125,7 @@ This project addresses these needs through **data exploration**, **visual storyt
    ![](boxplot_of_inumerical_valued_columns.PNG)
 
   - Business Insights:
-    - Humidity
+   - Humidity
       - Distribution: Fairly wide, ranging from ~0 to ~100%
       - Outliers: A few outliers present at the low end (around 0–10%)
       - Most humidity readings are within a reasonable range (around 40%–90%)
@@ -188,13 +188,13 @@ This project addresses these needs through **data exploration**, **visual storyt
    ![](CountofNumericalcategorisedValues.PNG)
 
    - Detailed Insights:
-     - Average Count by Temperature Range
+   - Average Count by Temperature Range
        - There's a clear positive correlation between temperature and the average count. As temperatures increase, the average count also steadily increases. The highest average counts are observed in the warmer temperature ranges, specifically around 28-42°C for temp and 32-46°C for atemp
        - Expect the highest demand or activity during warmer periods. This is critical for resource allocation (e.g., staffing, inventory, vehicle availability for a service like bike rentals)
        - Warm weather is an ideal time for promotions and marketing campaigns to capitalize on the higher natural demand
        - Ensure that services are fully operational and well-maintained in anticipation of peak demand during these warmer months
        - India experiences significant variations in temperature. Knowing these optimal ranges helps target specific seasons or regions for increased focus
-       - 
+         
    - Average Count by Humidity Range:
        - The average count peaks at moderate humidity levels (specifically, the 20.0-30.0% and 30.0-40.0% ranges), where it reaches the highest levels. As humidity either drops very low (below 10%) or rises significantly above 40-50%, the average count tends to decrease
        - Users seem most active or comfortable when humidity is moderate. Very dry or very humid conditions affect usage
@@ -206,7 +206,7 @@ This project addresses these needs through **data exploration**, **visual storyt
        - If relevant, providing real-time wind speed information could help users plan their activities or choose appropriate times
        - If high winds are frequent, explore strategies to make the service more appealing or safer (e.g.,offering wind-resistant gear)
 
-  - Overall Business Recommendations:
+   - Overall Business Recommendations:
      - Dynamic Resource Management: Use these insights to implement dynamic resource allocation. For example, increase staff, inventory, or operational hours during periods of optimal temperature, moderate humidity, and moderate wind speeds. Reduce resources during adverse conditions
      - Run promotions and targeted ads specifically during favorable weather conditions
      - Offer incentives or alternative solutions during unfavorable weather to maintain engagemen
@@ -275,76 +275,37 @@ This project addresses these needs through **data exploration**, **visual storyt
       - Apply weather-aware dynamic pricing
       - Notify users of poor conditions and promote indoor partner perks
 
+## Feature Selection
 
+- Feature selection is the process of identifying and selecting the most relevant input variables (features) that contribute most to predicting the target variable in a machine learning model.
+  
+**Why Feature Selection Matters:**
+   - Improves model accuracy by removing noisy or irrelevant data
+   - Reduces training time and computational cost
+   - Enhances interpretability of the model
+   - Prevents overfitting by avoiding unnecessary complexity.
 
-   
+Here also we have performed feature selection process to select the most appropriate features for predicting the rental count. The used techniques are
+   - Extra Trees Classifier
+   - Correlation Analysis
+   - Information Gain
+   - Univariate Analysis
 
-   
-
-
-
-   
-
-
-
-## 📁 Files
-
-- `GoBike_Rent_Analysis.ipynb`: Main Jupyter notebook with code, plots, and statistical analysis.
-- `GoBike_sharing_dataset.csv`: Dataset containing hourly bike rental information.
-- Output plots (generated upon execution):
-  - `rentals_by_season.png`
-  - `monthly_avg_rentals.png`
-  - `hourly_trend_users.png`
-  - `correlation_heatmap.png`
-
+Top 5 most important features (highest ➡️ lowest importance)
+Insights:
+ - Based on Extra Trees Classifier = windspeed, humidity, atemp, temp, month
+ - Based on Information Gain = weather, workingday, atemp, temp, month
+ - Based on Univariate Analysis = humidity,temp, atemp, windspeed, month
 ---
 
+## Conclusion
 
+The GoBike user behavior analysis reveals clear difference between user types, seasonal trends, and external influencing factors. Registered users, who primarily use the service for commuting, show consistent ridership throughout the year, with noticeable peaks on working days. In contrast, casual users are more active during holidays and warmer months, particularly in summer and fall, indicating leisure-based usage.
 
----
+Seasonal analysis confirms that ridership varies significantly across the year, with the highest usage in summer and fall and the lowest during winter. Weather also plays a critical role—clear skies and moderate temperatures drive the most rentals, while heavy rain and snow cause a steep decline in usage, especially among casual riders.
 
-## 🧪 Methodology
+These behavioral patterns were validated through statistical hypothesis testing. T-tests and ANOVA confirmed that the differences in rentals by day type, user category, and weather condition are statistically significant and not due to random variation.
 
-### 🧹 Data Preprocessing
-- Converted `datetime` into `hour`, `month`, `weekday`, and `year` features
-- Checked for nulls and data types
+From a business perspective, GoBike can leverage these insights to improve performance and customer satisfaction. Strategies such as commuter-focused weekday promotions, seasonal marketing campaigns for casual riders, and dynamic fleet allocation based on weather and seasonal forecasts can significantly enhance operations and profitability.
 
-### 📈 Visualizations
-- **Boxplots** for seasonal variation
-- **Line plots** for monthly and hourly trends
-- **Heatmaps** for correlation analysis
-
-### 🔬 Statistical Analysis
-- **Shapiro-Wilk test** for normality
-- **T-test**: Compared rental counts on working vs. non-working days
-- **ANOVA**: Analyzed rental variation across seasons
-
----
-
-## 🔍 Key Insights
-
-| Factor         | Insight                                                                 |
-|----------------|-------------------------------------------------------------------------|
-| **Season**     | Summer (season 3) has the highest rentals; winter (season 1) the lowest |
-| **Working Days** | Rentals significantly higher on working days (via t-test)              |
-| **User Types** | Registered users dominate weekdays; casuals peak on weekends            |
-| **Hourly Use** | Morning (7–9 AM) and evening (4–7 PM) peaks for commuters               |
-| **Weather**    | Rentals drop in bad weather, high humidity, and low temperature         |
-| **Temperature**| Positively correlated with rentals                                       |
-
----
-
-## 📦 How to Run
-
-1. Open `GoBike_Rent_Analysis.ipynb` in Jupyter Notebook
-2. Ensure `GoBike_sharing_dataset.csv` is in the same directory
-3. Run all cells to generate plots and perform analysis
-
----
-
-## 📚 Dependencies
-
-Install via pip:
-```bash
-pip install pandas matplotlib seaborn scipy
 
