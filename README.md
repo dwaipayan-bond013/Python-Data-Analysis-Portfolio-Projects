@@ -9,7 +9,7 @@ In this repository, you will find a variety of Python projects, including:
    
 2. 🏍️ [**Go Bike Rent Analysis**](https://github.com/dwaipayan-bond013/Python-Data-Analysis-Projects/tree/main/Go%20Bike%20Rent%20Analysis): The project explores user behavior, rental patterns, and bike utilization across different times and locations. Through data visualization and statistical analysis, the project uncovers trends to help optimize fleet management and improve customer experience.
    
-3. 🚗 [**Ola Ride Analysis**](https://github.com/dwaipayan-bond013/Python-Data-Analysis-Projects/tree/main/OLA%20Ride%20Analysis): The project examines ride patterns, user behavior, and trip efficiency across various city zones and time periods. Using Python-based data analysis and visualizations, it uncovers key insights to optimize route planning, pricing strategies, and service availability.
+3. 🚗 [**Ola Ride Analysis**](https://github.com/dwaipayan-bond013/Python-Data-Analysis-Projects/tree/main/OLA%20Ride%20Analysis): The project examines ride patterns, user behavior, and trip efficiency across various days and time periods. Using Python-based data analysis and visualizations, it uncovers key insights to optimize route planning, pricing strategies, and service availability.
 
 # Repository Structure
 To explore my Python portfolio, follow these steps:
