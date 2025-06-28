@@ -1,4 +1,4 @@
-# OLA Ride Analysis
+# 🚗 OLA Ride Analysis
 <p align="center">
 <img src="ola-case-study.jpg" width="1000"/>
 </p>
@@ -62,27 +62,22 @@ This project serves multiple use cases for stakeholders including:
      - Driver count rises rapidly starting at 6 AM, reaching 129–133 between 10–12 AM, but requests remain low, e.g.: 09:00: 26 requests vs 110 drivers, 10:00: 28 requests vs 129 drivers
      - Significant driver over-supply during morning hours. Drivers may be idle or underutilized
   - Afternoon Hours (12:00–17:00)
-Supply remains high (~120–165 drivers), but demand is only gradually rising:
+     - Supply remains high (~120–165 drivers), but demand is only gradually rising eg. 14:00 & 15:00: 71 requests vs 125–139 drivers and 17:00: 98 requests vs 180 drivers
+     - Extended oversupply period during mid-day. Driver earnings may suffer due to low ride frequency
+  - Evening Peak (18:00–22:00)
+     - Demand and supply both peak, indicating solid performance eg. 18:00: 119 requests vs 174 drivers, 19:00: 156 requests vs 180 drivers
+  - High demand aligns well with supply till 9 PM. A slight driver shortfall at 10 PM may cause longer wait times or missed trips
+  - Late Night (23:00)
+     - 184 requests vs 119 drivers
+     - High demand and under-supply — one of the biggest gaps. This hour is a critical opportunity zone
 
-14:00 & 15:00: 71 requests vs 125–139 drivers
+- Business Implications & Recommendations:
+  - Reduce driver density in morning and early afternoon.
+  - Shift excess driver hours toward late-night coverage (10 PM–12 AM)
+  - Provide peak-hour bonuses or per-trip incentives after 10 PM to increase night coverage
+  - Promote shared rides or pre-scheduled pickups to level out peaks
+  - Improve real-time driver-rider matching by relocating idle drivers to high-probability zones before demand spikes
+  - Offer time-bound discount coupons for rides between 6–10 AM
 
-17:00: 98 requests vs 180 drivers
 
-🔎 Insight: Extended oversupply period during mid-day. Driver earnings may suffer due to low ride frequency.
-
-4. 🌆 Evening Peak (18:00–22:00)
-Demand and supply both peak, indicating solid performance:
-
-18:00: 119 requests vs 174 drivers
-
-19:00: 156 requests vs 180 drivers
-
-22:00: 174 requests vs 144 drivers
-
-🔎 Insight: High demand aligns well with supply till 9 PM. A slight driver shortfall at 10 PM may cause longer wait times or missed trips.
-
-5. 🌙 Late Night (23:00)
-184 requests vs 119 drivers
-
-🔥 Insight: High demand and under-supply — one of the biggest gaps. This hour is a critical opportunity zone.
 
