@@ -219,8 +219,31 @@ This project serves multiple use cases for stakeholders including:
     - These might be linked to high-demand areas like commercial hubs, festivals, or weekends.
    
 - Business Implications and Recommendations
-  - 
+  - Focus on demand-responsive driver allocation — assign more drivers to areas historically showing higher request volumes
+  - Conversely, reallocate drivers from oversaturated zones where supply exceeds demand (15+ drivers but no increase in requests)
+  - Use low driver + low request areas to run promotional offers to boost demand or incentivize drivers to be available in underserved regions
+  - Analyze instances where high driver counts didn't result in high requests. Reasons could include: Platform downtime, High cancellations
+  - Incentisize drivers in zones where requests spike but driver availability is low. This can improve platform responsiveness and reduce missed opportunities
+ 
+- **View Jupyter notebook for few more business specific insights**
 
+-📈 Overall Trends
+  - Demand and supply are not synchronized — peak hours and days face service disruptions due to driver unavailability
+  - There is significant latent demand as seen by high eyeballs but lower conversions into requests
+  - Trip fulfillment rates drop during high-demand periods, leading to customer dissatisfaction
+  - Incomplete trips are not solely tied to high demand — they also occur when supply chain lags or system inefficiencies are present
+
+### Final Conclusion:-
+---
+The ride platform shows a classic demand-supply mismatch — with demand spiking on weekends and nights, while supply (drivers) fails to scale accordingly. On weekdays, especially midweek, the challenge shifts to activating demand through promotions and retention offers.
+- To remain competitive and improve profitability, the platform must:
+  - Adapt operations dynamically to changing daily/hourly patterns
+  - Utilize user behavior signals (eyeballs) to tailor pricing and offers
+  - Reduce churn from incomplete rides, which erode trust and retention
+By addressing these gaps through data-backed resource planning, customer segmentation, and intelligent driver deployment, the ride platform can maximize customer satisfaction and operational efficiency.
+
+## Contact
+For questions or collaboration inquiries, feel free to reach out via [dwaipayan.saha1997@gmail.com](dwaipayan.saha1997@gmail.com) or [Linkedin](https://www.linkedin.com/in/dwaipayan-s-9080a689/)
 
 
 
