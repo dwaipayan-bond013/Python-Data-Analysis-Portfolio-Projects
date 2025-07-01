@@ -1,5 +1,8 @@
 # Python-Data-Analysis-Projects
-![](Python_Poster.jpg)
+<p align="center">
+  <img src="Python_Poster.jpg" width="800px">
+</p><br>
+
 Welcome to my  Python portfolio repository! Here you'll find a collection of Python projects, codes, insights and recommendation that I've worked on, showcasing my skills and expertise in EDA, data analysis, and data manipulation using Python.
 # About Me
 I am a passionate data enthusiast with a strong background in Python. Over the years, I have utilised my skills in writing and optimizing complex codes, and leveraging Python's powerful features to extract meaningful insights from data. This portfolio serves as a testament to my proficiency in Python and demonstrates my ability to tackle real-world data challenges. 
