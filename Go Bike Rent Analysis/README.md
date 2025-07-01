@@ -241,7 +241,7 @@ This project addresses these needs through **data exploration**, **visual storyt
 
 ## 🧪 A/B Testing and Statistical summaries
 
-📌 Hypothesis 1: Rentals are higher on working days than holidays
+   - 📌 Hypothesis 1: Rentals are higher on working days than holidays
       - Test Used: Mann Whitney - U test
       - Groups Compared: workingday = 1 vs workingday = 0
       - p-value: < 0.001
@@ -252,11 +252,11 @@ This project addresses these needs through **data exploration**, **visual storyt
       - Ensure bike availability and rebalancing during weekday peaks
       - Use holiday ride bundles to engage casual users on low-demand days
 
-📌 Hypothesis 2: To test No. of bikes rented similar or different in different seasons
+   - 📌 Hypothesis 2: To test No. of bikes rented similar or different in different seasons
       - Test Used: Kruskal Wallis Test, Dunn Test
       - p-value: < 0.0001
       - Insight: Registered users dominate usage and represent long-term revenue
-          - Groups which differ are: Fall VS Spring, Fall VS Summer, Fall VS Winter, Sring VS Summer, Spring VS Winter
+      - Groups which differ are: Fall VS Spring, Fall VS Summer, Fall VS Winter, Sring VS Summer, Spring VS Winter
 
    - Business Action:
       - Increase the number of bikes and docking stations in high-demand seasons (e.g., summer/fall), and reduce inventory in low-demand seasons (e.g., winter)
@@ -265,7 +265,7 @@ This project addresses these needs through **data exploration**, **visual storyt
       - During winter, provide weather-resistant bikes or promote shorter trips with bundled passes
       - Introduce season-specific passes (e.g., summer-only commuter pass) for occasional or tourist users
 
-📌 Hypothesis 3: Weather conditions affect rental count
+   - 📌 Hypothesis 3: Weather conditions affect rental count
       - Test Used: Kruskal Wallis Test, Dunn Test
       - Weather Categories: Clear sky, Mist/Cloudy, Light Rain/Snow, Heavy Rain
       - p-value: < 0.001
