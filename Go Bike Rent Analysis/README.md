@@ -87,6 +87,8 @@ This project addresses these needs through **data exploration**, **visual storyt
     - Offer discounted monthly subscriptions in early spring to convert casual to registered users
     - Scale up bike and station availability in summer months
     - Reinforce bike maintenance and inspection processes in June–August
+
+3. 
       
 3. **Weather wise count Analysis**
 
