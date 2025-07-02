@@ -11,7 +11,8 @@ In this project, we dive deep into delivery trip data to uncover hidden ineffici
 
 We work with a dataset comprising **144,867+ delivery records**, including information on trip times, source-destination pairs, route types, estimated vs actual distances, and delays.
 
----
+## Business Problem
+DTDC faced challenges in understanding regional delivery performance, route inefficiencies, and delay patterns across its pan-India network. There was a lack of visibility into state-wise trip volumes, delivery delays compared to estimated timelines, and seasonal demand fluctuations. This limited the company's ability to optimize resources, maintain SLA compliance, and expand into underserved regions. Through comprehensive data analysis and visual insights, this project identifies operational bottlenecks, high-demand corridors, and delay hotspots, enabling DTDC to make data-driven decisions to enhance delivery efficiency, reduce turnaround times, and improve customer satisfaction.
 
 ## Dataset Highlights
 
