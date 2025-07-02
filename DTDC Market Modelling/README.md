@@ -61,13 +61,13 @@ DTDC faced challenges in understanding regional delivery performance, route inef
 - **Jupyter Notebook** – Exploratory analysis and documentation
 
 ## 📈 Key Business Insights
-1. Data Overview
+1. **Data Overview**
    - Total Records Analyzed: **144,867** delivery segments
    - Transport Types:
      - Carting: Major mode of transport (visibly dominant across trips)
      - FTL (Full Truck Load): Used for long-haul, high-volume routes
 
-2. Route Efficiency
+2. **Route Efficiency**
    - Average OSRM(open-source routing engine) Estimated Time: **~66 minutes**
    - Average Actual Time Taken: **~84 minutes**
    - Delay Compared to Estimate: **~27%** longer than the optimal time
@@ -77,34 +77,36 @@ DTDC faced challenges in understanding regional delivery performance, route inef
       - Avg Actual Segment Time: **~37 mins**
       - Efficiency Drop in Segment-Level: **42.3%** increase
 
-3. Distance Insights
+3. **Distance Insights**
   - Average Distance Travelled (Actual): **56.9 km**
   - OSRM Estimated Distance: **62.3 km**
   - Actual distances are **~8.7%** shorter, suggesting some optimization in real-world routing.
 
-4. State-wise Delivery Volume
-  - Top 5 Source States:
-    - Maharashtra
-    - Karnataka
-    - Haryana
-    - Tamil Nadu
-    - Uttar Pradesh
+4. **State-wise Delivery Volume**
 
-  ![](NumberOfTripsfromSourceStatewise.PNG)
+     ![](NumberOfTripsfromSourceStatewise.PNG)
+     - Top 5 Source States:
+       - Maharashtra
+       - Karnataka
+       - Haryana
+       - Tamil Nadu
+       - Uttar Pradesh
 
- - Top 5 Destination States:
-   - Maharashtra
-   - Gujarat
-   - Karnataka
-   - Delhi
-   - Tamil Nadu
+    ![](NumberofDestinationStatewise.PNG)
+    - Top 5 Destination States:
+      - Maharashtra
+      - Karnataka
+      - Haryana
+      - Tamil Nadu
+      - Uttar Pradesh
 
-  ![](NumberofDestinationStatewise.PNG)
+ These states account for more than 65% of total delivery volumes.Maharashtra leads both in dispatch and receipt, indicating intra-state routing. Resource planning should factor in state-specific traffic and return load strategies.
+ Maharashtra and Karnataka form DTDC’s delivery heartlands.Weak penetration in northeastern states signals potential for regional growth if infrastructure allows.
 
-These states account for more than 65% of total delivery volumes.Maharashtra leads both in dispatch and receipt, indicating intra-state routing. Resource planning should factor in state-specific traffic and return load strategies.
-Maharashtra and Karnataka form DTDC’s delivery heartlands.Weak penetration in northeastern states signals potential for regional growth if infrastructure allows.
+5. **Time Efficiency by Route Type**
 
-5. Time Efficiency by Route Type
+   ![](RoutewiseDeliveryAnalysis.PNG)
+   
    - From visual comparisons:
      - FTL (Full Truck Load): Actual time is much higher than OSRM estimated time **(approx. 575 vs 430)**
      - Carting Deliveries are consistently closer to OSRM time predictions **(deviation < 15%)**
@@ -113,106 +115,112 @@ Maharashtra and Karnataka form DTDC’s delivery heartlands.Weak penetration in 
      - FTL routes show more delays, possibly due to bulk handling, loading/unloading time, or highway congestion
      - Carting might be more efficient for smaller, time-sensitive loads
 
-  ![](RoutewiseDeliveryAnalysis.PNG)
+   - Recommendation: FTL should be prioritized for high-priority or long-distance deliveries.
 
-Recommendation: FTL should be prioritized for high-priority or long-distance deliveries.
-
-6. Cut-off Performance
+7. Cut-off Performance
    - Cutoff Factor Average: ~2.5
    - This field  correlates with delay beyond scheduled scan windows
    - Suggests the importance of adjusting cutoff factor thresholds to manage SLA compliance better
 
-## 🧪 A/B Testing
+## 🧪 **Hypothesis Testing**
 
 - Test 1: Actual Time vs OSRM Time
-  - *Hypothesis:* Actual trip time is statistically different from OSRM-estimated time.
-    * *Sample Size:* 14,817 trips
-    * *Test:* Mann-Whitney U (Non-parametric)
-    * *P-Value:* 0.00 → *Statistically significant*
+  - **Hypothesis:** Actual trip time is statistically different from OSRM-estimated time.
+     - **Sample Size:** 14,817 trips
+     - **Test:** Mann-Whitney U (Non-parametric)
+     - **P-Value:**< 0.00 → **Statistically significant**
   - Insight:
-    - Real delivery times were *50–60% longer* than expected
-    - Suggests systemic delay or inaccurate routing assumptions
+     - Real delivery times were **50–60%** longer* than expected
+     - Suggests systemic delay or inaccurate routing assumptions
 
 - Test 2: Actual Time vs Segment Actual Time
-  - *Hypothesis:* Actual trip time = sum of segment actual times
-    * *Test Used:* Mann-Whitney U
-    * *P-Value:* 0.00
+  - **Hypothesis:** Actual trip time = sum of segment actual times
+     - **Test Used:** Mann-Whitney U
+     - **P-Value:**< 0.00 → **Statistically significant**
   - Insight:
-    - Segment actual times were *30% shorter* than complete trip times
-    - Suggests untracked transfer, handling, or idle times during segment transitions
+     - Segment actual times were *30% shorter* than complete trip times
+     - Suggests untracked transfer, handling, or idle times during segment transitions
 
 - Test 3: OSRM Distance vs Segment OSRM Distance
-  - *Hypothesis:* OSRM-calculated trip distance = sum of segment distances
-    * *Test Used:* Mann-Whitney U
-    * * *P-Value:* 0.00
+  - **Hypothesis:** OSRM-calculated trip distance = sum of segment distances
+    - **Test Used:** Mann-Whitney U
+    - **P-Value:**< 0.00 → **Statistically significant**
   - Insight:
     - Segment OSRM distances varied by *20–25%* from the full trip OSRM distance
     - Points to issues in route segmentation, potential detours, or poor data stitching
 
 - Test 4: OSRM Time vs Segment OSRM Time
-  - *Hypothesis:* OSRM total trip time = sum of segment OSRM times
-    * *Test Used:* Mann-Whitney U
-    * *P-Value:* 0.00
+  - **Hypothesis:** OSRM total trip time = sum of segment OSRM times
+    - **Test Used:** Mann-Whitney U
+    - **P-Value:*< 0.00 → **Statistically significant**
   - Insight:
-    - Differences of *15–20%* were found, indicating inconsistencies in estimated segment times
+    - Differences of **15–20%** were found, indicating inconsistencies in estimated segment times
     - Suggests that full-route estimates cannot rely solely on segment-level OSRM predictions
 
 ## 📊 Visual Insights
 
-1. ![](NumberofDeliveriesStatewiseDestinationwise.PNG)
+1. **Delivery destination count vs State and Place**
+   
+   ![](NumberofDeliveriesStatewiseDestinationwise.PNG)
 
-- Top destination: Bilaspur, Haryana (1050 deliveries)
-- Other key destinations: Nelmangla (Karnataka), Mankoli (Maharashtra), Shamshabad (Telangana), and Medhopur (Punjab)
+   - Top destination: Bilaspur, Haryana (**1050 deliveries**)
+   - Other key destinations: Nelmangla (Karnataka), Mankoli (Maharashtra), Shamshabad (Telangana), and Medhopur (Punjab)
 
-Business Insight:
-- These hubs are critical for DTDC's network — high demand zones should be prioritized for better resource allocation
-- Route bottlenecks and delays in these locations can significantly affect overall efficiency
+ - Business Insight:
+   - These hubs are critical for DTDC's network — high demand zones should be prioritized for better resource allocation
+   - Route bottlenecks and delays in these locations can significantly affect overall efficiency
+  
+2. **Delivery source count vs State and Source**
+
+   ![](NumberofDeliveriesStatewiseSourcewise.PNG)
+   
+   - Top source: Bilaspur, Haryana (**1142 deliveries**) — aligns with its role as both top source and destination
+   - Other major origins: Mankoli (Maharashtra), Nelmangla (Karnataka), Bommsandra (Karnataka), and Tathawade (Maharashtra)
+
+ - Business Insight:
+   - Bilaspur acts as a super-node in DTDC’s network
+   - These regions might need capacity upgrades or better tracking systems to manage inflow-outflow efficiently
   
 
-2. ![](NumberofDeliveriesStatewiseSourcewise.PNG)
+3. **OSRM distance vs Actual distance analysis**
+   ![](StatewiseOSRMvsActualDistanceAnalysis.PNG)
 
-- Top source: Bilaspur, Haryana (1142 deliveries) — aligns with its role as both top source and destination
-- Other major origins: Mankoli (Maharashtra), Nelmangla (Karnataka), Bommsandra (Karnataka), and Tathawade (Maharashtra)
+   - Many states (e.g., Haryana, Assam, Orissa) show significantly higher actual distances than OSRM estimates.
 
-Business Insight:
-- Bilaspur acts as a super-node in DTDC’s network
-- These regions might need capacity upgrades or better tracking systems to manage inflow-outflow efficiently
-  
+ - Business Insight:
+   - Route deviations or unoptimized paths increase delivery distance
+   - Real-world delivery paths often differ due to toll avoidance, road conditions, or vehicle restrictions
 
-3. ![](StatewiseOSRMvsActualDistanceAnalysis.PNG)
+4. **OSRM time vs Actual time analysis**
+   ![](StatewiseOSRMvsActualTimeAnalysis.PNG)
 
--Many states (e.g., Haryana, Assam, Orissa) show significantly higher actual distances than OSRM estimates.
+   - Widespread delay observed: actual times consistently exceed OSRM expectations
+   - States like Assam, Haryana, and Orissa show the highest time discrepancies
 
-Business Insight:
-- Route deviations or unoptimized paths increase delivery distance
-- Real-world delivery paths often differ due to toll avoidance, road conditions, or vehicle restrictions
+ - Business Insight:
+   - Consistent delays across the network hint at infrastructure issues, operational inefficiencies, or inaccurate OSRM calibration
+   - Delay mitigation strategies should be state-specific and data-informed
 
-4. ![](StatewiseOSRMvsActualTimeAnalysis.PNG)
+5. **Monthwise Trip Analysis**
+   
+   ![](TripGeneratedMonthwise.PNG)
 
-- Widespread delay observed: actual times consistently exceed OSRM expectations
-- States like Assam, Haryana, and Orissa show the highest time discrepancies
+   - September (Month 9) accounts for ~87% of all trips; October (Month 10) only **~13%**
 
-Business Insight:
-- Consistent delays across the network hint at infrastructure issues, operational inefficiencies, or inaccurate OSRM calibration
-- Delay mitigation strategies should be state-specific and data-informed
+ - Business Insight:
+   - There’s a heavy seasonal surge in deliveries during September — possibly linked to festivals, e-commerce sales, or fiscal cycle
+   - DTDC should prepare with seasonal workforce, vehicle availability, and inventory planning for Q3 peaks
 
-5. ![](TripGeneratedMonthwise.PNG)
+6. **Daywise Delivery Analysis**
+   
+   ![](DaywiseDeliveryAnalysis.PNG)
 
-- September (Month 9) accounts for ~87% of all trips; October (Month 10) only ~13%
-
-Business Insight:
-- There’s a heavy seasonal surge in deliveries during September — possibly linked to festivals, e-commerce sales, or fiscal cycle
-- DTDC should prepare with seasonal workforce, vehicle availability, and inventory planning for Q3 peaks
-
-6. ![](DaywiseDeliveryAnalysis.PNG)
-
-- Mid-Week Spike in Orders: Wednesday (16.54%) and Thursday (16.01%) have the highest order volumes
-  - Indicates strong customer activity mid-week, possibly due to routine purchases, salary-week effects, or business restocking cycles
-- End-of-Week Strength: Friday (15.02%) also shows strong order volume, possibly people preparing for the weekend
-- Weekend Dip (Slight): Saturday (13.85%) and Sunday (13.49%) see slightly lower order rates compared to weekdays
-  - Could be due to relaxation periods, lower B2B activity, or delivery slowdowns
-- Beginning of Week Is Weakest: Monday (13.05%) and especially Tuesday (12.03%) show the lowest number of orders
-  - May reflect delayed decision-making after weekends or lower purchase intent early in the week
+   - Mid-Week Spike in Orders: Wednesday (16.54%) and Thursday (16.01%) have the highest order volumes
+   - Indicates strong customer activity mid-week, possibly due to routine purchases, salary-week effects, or business restocking cycles
+   - End-of-Week Strength: Friday (15.02%) also shows strong order volume, possibly people preparing for the weekend
+   - Weekend Dip (Slight): Saturday (13.85%) and Sunday (13.49%) see slightly lower order rates compared to weekdays.Could be due to relaxation periods, lower B2B activity, or delivery slowdowns
+   - Beginning of Week Is Weakest: Monday (13.05%) and especially Tuesday (12.03%) show the lowest number of orders
+   - May reflect delayed decision-making after weekends or lower purchase intent early in the week
  
 
 ## Overall outcomes and Recommendations:
