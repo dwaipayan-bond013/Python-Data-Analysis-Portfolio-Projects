@@ -1,9 +1,9 @@
-
 # 🚲 GoBike Rental Analysis
 ![](gobikes_india_cover.jpg)
----
 
-## Project Overview
+## Business Problem
+The GoBike rental service, a leading bike-sharing platform, aims to provide convenient, affordable, and environmentally friendly transportation solutions. However, the service is experiencing significant supply-demand mismatches, especially during peak demand periods (such as summer and holidays). These issues result in unmet customer demand, service inefficiencies, and lower customer satisfaction. 
+
 GoBike Rental Analysis is a data-driven project aimed at understanding how different factors influence the usage of a bike-sharing system over time. Using real-world rental data collected on daily and hourly basis, this analysis helps identify usage patterns that can inform **business strategies**, **operational improvements**, and **customer engagement efforts**.EDA and statistical tests are performed which aimed at understanding how different factors influence the usage of a bike-sharing system over time. 
 
 ## 📊 Dataset Overview
