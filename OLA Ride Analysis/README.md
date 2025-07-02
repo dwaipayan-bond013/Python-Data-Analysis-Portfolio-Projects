@@ -97,29 +97,29 @@ This project serves multiple use cases for stakeholders including:
     - **05:00: 14 requests, only 4 trips (29%)**
     - Extremely low supply or system idling, even though small but critical demand (e.g. airport rides) exists
 
- - Morning Ramp-Up **(08:00–12:00)**
-   - Requests gradually rise to **47–53**, but completions lag behind
-   - **10:00: 28 requests, 18 trips → 64%**
-   - **11:00: 47 requests, 36 trips → 77%**
-   - Mid-morning sees mild under-fulfillment. Gaps are smaller than late night but still present
+  - Morning Ramp-Up **(08:00–12:00)**
+    - Requests gradually rise to **47–53**, but completions lag behind
+    - **10:00: 28 requests, 18 trips → 64%**
+    - **11:00: 47 requests, 36 trips → 77%**
+    - Mid-morning sees mild under-fulfillment. Gaps are smaller than late night but still present
 
- - Afternoon Stability **(13:00–17:00)**
-   - Fulfillment rate improves
-   - **14:00–15:00: ~70%**
-   - **16:00: 82 requests vs 68 trips → 83%**
-   - **17:00: 98 vs 78 → 80%**
-   - Service is more reliable in this period; demand and supply are relatively balanced
+  - Afternoon Stability **(13:00–17:00)**
+    - Fulfillment rate improves
+    - **14:00–15:00: ~70%**
+    - **16:00: 82 requests vs 68 trips → 83%**
+    - **17:00: 98 vs 78 → 80%**
+    - Service is more reliable in this period; demand and supply are relatively balanced
 
- - Evening Peak **(18:00–22:00)**
-   - Highest demand window of the day
-   - **19:00: 156 requests vs 120 trips → 77%**
-   - **22:00: 174 vs 134 → 77%**
-   - **21:00: 112 vs 88 → 79%**
-   - Consistently **20–30%** of demand is unfulfilled, which can lead to high user dissatisfaction during rush hour
+  - Evening Peak **(18:00–22:00)**
+    - Highest demand window of the day
+    - **19:00: 156 requests vs 120 trips → 77%**
+    - **22:00: 174 vs 134 → 77%**
+    - **21:00: 112 vs 88 → 79%**
+    - Consistently **20–30%** of demand is unfulfilled, which can lead to high user dissatisfaction during rush hour
 
-  - Late Night **(23:00)**
-    - **184** requests vs 126 completions → **69%** fulfillment
-    - One of the biggest demand-supply gaps of the day. Lost trips and user churn risk is high
+   - Late Night **(23:00)**
+     - **184** requests vs 126 completions → **69%** fulfillment
+     - One of the biggest demand-supply gaps of the day. Lost trips and user churn risk is high
 
   - Business Implications and Recommendations
     - Offer higher incentives or surge bonuses to drivers for late night hours (11 PM–2 AM) and morning shortage hours (3 AM–6 AM)
