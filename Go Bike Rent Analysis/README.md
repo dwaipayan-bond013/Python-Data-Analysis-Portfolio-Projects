@@ -88,9 +88,24 @@ This project addresses these needs through **data exploration**, **visual storyt
     - Scale up bike and station availability in summer months
     - Reinforce bike maintenance and inspection processes in June–August
 
-3. 
+3.  **Hourly Analysis**
+
+   ![](HourlyAnalysis.png)
+
+  - Business Insights
+    - The highest demand occurs between 7 AM - 9 AM and 5 PM - 7 PM, with the 8 AM and 5 PM hours showing the most rentals (165,060 and 213,757, respectively).This suggests that commuters dominate rentals during rush hours, with high usage around work start and end times
+    - There is a notable drop in demand from 10 AM to 4 PM, especially between 10 AM and 2 PM, with relatively lower counts (below 100,000).These hours may see leisure riders or occasional users but are not as busy as the morning and evening peaks
+    - High demand continues into the evening (from 5 PM to 7 PM), which indicates that users are likely renting bikes for commuting or post-work activities.Post-evening demand gradually drops from 9 PM to midnight, reflecting that rentals primarily align with working hours and peak commute times
+    - The early morning hours (12 AM to 6 AM) see significantly lower demand, with values well below 50,000 rentals per hour, indicating that bikes are underutilized overnight
       
-3. **Weather wise count Analysis**
+  - Recommendations:
+    - Increase fleet availability during morning (7–9 AM) and evening (5–7 PM) peak hours when demand surges as it reduces the occurrence of zero availability and ensures higher completion rates during critical demand periods
+    - Introduce promotions or discounts during the midday lull (10 AM - 4 PM) to boost demand. Consider offering half-price rides or loyalty points for rentals during these hours as it helps to reduce idle bikes during off-peak hours and can smoothen out usage trends across the day
+    - During peak hours, strategically distribute bikes around high-traffic areas like business districts, transportation hubs, and tourist spots. This ensures that supply matches demand and that customers have access to bikes when and where they need them the most
+    - Implement surge pricing during peak hours (morning and evening) to balance supply and demand and incentivize drivers.It generates higher revenue during peak periods and attracts more drivers to meet the high demand
+    - Enable advanced booking for customers, allowing them to reserve bikes for peak hours.
+      
+4. **Weather wise count Analysis**
 
   - Registered Users<br>
    ![](weatherwise_count_analysis1.PNG)<br>
@@ -107,7 +122,7 @@ This project addresses these needs through **data exploration**, **visual storyt
     - Display real-time weather alerts in app
     - Offer co-promotions with public transport during bad weather
 
-4. **Weekday vs WorkingDay count analysis**
+5. **Weekday vs WorkingDay count analysis**
 
    ![](type_of_daywise_analysis.PNG)
 
@@ -120,7 +135,7 @@ This project addresses these needs through **data exploration**, **visual storyt
     - Weekend/holiday discounted ride passes for casual users
     - Shift more bikes to tourist hubs on weekends
 
-5. **Outlier Analysis**
+6. **Outlier Analysis**
 
    Based on numerical features analysis:
 
@@ -185,7 +200,7 @@ This project addresses these needs through **data exploration**, **visual storyt
       - More high-rental outliers in 2012
       - Business grew strongly in 2012—demand increased
 
-6. **Categorising numerical inputs and counting users based on the numerical inputs**
+7. **Categorising numerical inputs and counting users based on the numerical inputs**
 
    ![](CountofNumericalcategorisedValues.PNG)
 
@@ -215,7 +230,7 @@ This project addresses these needs through **data exploration**, **visual storyt
      - Since service is weather-dependent, consider integrating real-time weather forecasts into your customer-facing platforms
      - Strategic Planning: Use these insights for long-term strategic planning, such as determining the best seasons for major product launches, expansions, or maintenance activities
 
-7. **Scatterplots between dependent and independent variables**
+8. **Scatterplots between dependent and independent variables**
 
  - In all scatter plots (Humidity, Windspeed, Temperature), Registered Users consistently outnumber Casual Users across the vast majority of the data points. This suggests a strong core user base.
 
