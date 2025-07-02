@@ -38,7 +38,6 @@ This project addresses these needs through **data exploration**, **visual storyt
 - **Visualization of seasonal, monthly, and hourly usage** to identify high-demand periods
 - **Correlation analysis** between rental volume and weather-related variables (temperature, humidity, etc.)
 - **Statistical testing** (Shapiro-Wilk, t-tests, ANOVA) to validate key assumptions
----
 
 ## Insights and Analysis
 
