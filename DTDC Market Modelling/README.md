@@ -44,7 +44,6 @@ DTDC faced challenges in understanding regional delivery performance, route inef
 #### • segment_osrm_time – This is the OSRM segment time. Time taken by the subset of the package delivery
 #### • segment_osrm_distance – This is the OSRM distance. Distance covered by subset of the package delivery
 #### • segment_factor – Unknown field
----
 
 ## 🎯 Key Objectives
 
@@ -54,8 +53,6 @@ DTDC faced challenges in understanding regional delivery performance, route inef
 - Uncover regional trends in delivery traffic
 - Provide actionable recommendations to improve route efficiency
 
----
-
 ## Technologies Used
 
 - **Python 3.x**
@@ -63,29 +60,27 @@ DTDC faced challenges in understanding regional delivery performance, route inef
 - **Matplotlib, Seaborn** – Data visualization
 - **Jupyter Notebook** – Exploratory analysis and documentation
 
----
-
 ## 📈 Key Business Insights
 1. Data Overview
-   - Total Records Analyzed: 144,867 delivery segments
+   - Total Records Analyzed: **144,867** delivery segments
    - Transport Types:
      - Carting: Major mode of transport (visibly dominant across trips)
      - FTL (Full Truck Load): Used for long-haul, high-volume routes
 
 2. Route Efficiency
-   - Average OSRM(open-source routing engine) Estimated Time: ~66 minutes
-   - Average Actual Time Taken: ~84 minutes
-   - Delay Compared to Estimate: ~27% longer than the optimal time
+   - Average OSRM(open-source routing engine) Estimated Time: **~66 minutes**
+   - Average Actual Time Taken: **~84 minutes**
+   - Delay Compared to Estimate: **~27%** longer than the optimal time
    - This indicates inefficiencies in logistics (traffic, delays, handling).
    - Segment-wise Time:
-      - Avg OSRM Segment Time: ~26 mins
-      - Avg Actual Segment Time: ~37 mins
-      - Efficiency Drop in Segment-Level: 42.3% increase
+      - Avg OSRM Segment Time: **~26 mins**
+      - Avg Actual Segment Time: **~37 mins**
+      - Efficiency Drop in Segment-Level: **42.3%** increase
 
 3. Distance Insights
-  - Average Distance Travelled (Actual): 56.9 km
-  - OSRM Estimated Distance: 62.3 km
-  - Actual distances are ~8.7% shorter, suggesting some optimization in real-world routing.
+  - Average Distance Travelled (Actual): **56.9 km**
+  - OSRM Estimated Distance: **62.3 km**
+  - Actual distances are **~8.7%** shorter, suggesting some optimization in real-world routing.
 
 4. State-wise Delivery Volume
   - Top 5 Source States:
@@ -111,10 +106,10 @@ Maharashtra and Karnataka form DTDC’s delivery heartlands.Weak penetration in 
 
 5. Time Efficiency by Route Type
    - From visual comparisons:
-     - FTL (Full Truck Load): Actual time is much higher than OSRM estimated time (approx. 575 vs 430)
-     - Carting Deliveries are consistently closer to OSRM time predictions (deviation < 15%)
+     - FTL (Full Truck Load): Actual time is much higher than OSRM estimated time **(approx. 575 vs 430)**
+     - Carting Deliveries are consistently closer to OSRM time predictions **(deviation < 15%)**
      - Carting: Lower volume but still shows actual time exceeding estimates
-     - Carting Deliveries show higher deviations (avg. 20–35% longer than OSRM estimates)
+     - Carting Deliveries show higher deviations (avg. **20–35%** longer than OSRM estimates)
      - FTL routes show more delays, possibly due to bulk handling, loading/unloading time, or highway congestion
      - Carting might be more efficient for smaller, time-sensitive loads
 
@@ -126,7 +121,6 @@ Recommendation: FTL should be prioritized for high-priority or long-distance del
    - Cutoff Factor Average: ~2.5
    - This field  correlates with delay beyond scheduled scan windows
    - Suggests the importance of adjusting cutoff factor thresholds to manage SLA compliance better
----
 
 ## 🧪 A/B Testing
 
