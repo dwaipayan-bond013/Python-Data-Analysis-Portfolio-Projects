@@ -50,8 +50,8 @@ This project addresses these needs through **data exploration**, **visual storyt
    ![](seasonwisecasualusersanalysis.PNG)
 
   - Business Insights:
-    - Casual Users: Highest in Summer (81,978 in 2012) and Fall (80,682) and lowest in Spring (27,911) and Winter (45,747)
-    - Registered Users: Highest in Fall (304,732) and Winter (286,693) and lowest in Spring (189,456) and Summer (286,298)
+    - Casual Users: Highest in **Summer (81,978 in 2012)** and **Fall (80,682)** and lowest in **Spring (27,911)** and **Winter (45,747)**
+    - Registered Users: Highest in **Fall (304,732)** and **Winter (286,693)** and lowest in **Spring (189,456) and Summer (286,298)**
     - Usage is more balanced across seasons, unlike casuals
     - Casual users rely on pleasant weather and daylight (Summer, Fall)
     - Registered users ride consistently year-round, suggesting use for daily commuting
@@ -71,9 +71,9 @@ This project addresses these needs through **data exploration**, **visual storyt
 
   - Business Insights:
     - Casual Users:
-      - Sharp increase from March to peak in June to August, then a decline
-      - April to September show the highest casual activity
-      - Casual rentals in 2012 were significantly higher than 2011 across all months
+      - Sharp increase from March to peak in **June to August**, then a decline
+      - **April to September** show the highest casual activity
+      - Casual rentals in **2012** were significantly higher than **2011** across all months
     - Registered Users:
       - High and stable usage throughout the year
       - June to October are top-performing months, each crossing ~100,000 rides in 2012
@@ -82,7 +82,7 @@ This project addresses these needs through **data exploration**, **visual storyt
     - Registered usage is stable, habitual, and commute-driven
 
   - Recommendations:
-    - Launch tourist/short-term promotions between April and September
+    - Launch tourist/short-term promotions between **April and September**
     - Offer discounted monthly subscriptions in early spring to convert casual to registered users
     - Scale up bike and station availability in summer months
     - Reinforce bike maintenance and inspection processes in June–August
@@ -92,13 +92,13 @@ This project addresses these needs through **data exploration**, **visual storyt
    ![](HourlyAnalysis.png)
 
   - Business Insights
-    - The highest demand occurs between 7 AM - 9 AM and 5 PM - 7 PM, with the 8 AM and 5 PM hours showing the most rentals (165,060 and 213,757, respectively).This suggests that commuters dominate rentals during rush hours, with high usage around work start and end times
-    - There is a notable drop in demand from 10 AM to 4 PM, especially between 10 AM and 2 PM, with relatively lower counts (below 100,000).These hours may see leisure riders or occasional users but are not as busy as the morning and evening peaks
-    - High demand continues into the evening (from 5 PM to 7 PM), which indicates that users are likely renting bikes for commuting or post-work activities.Post-evening demand gradually drops from 9 PM to midnight, reflecting that rentals primarily align with working hours and peak commute times
-    - The early morning hours (12 AM to 6 AM) see significantly lower demand, with values well below 50,000 rentals per hour, indicating that bikes are underutilized overnight
+    - The highest demand occurs between **7 AM - 9 AM and 5 PM - 7 PM**, with the **8 AM and 5 PM** hours showing the most rentals (**165,060 and 213,757**, respectively).This suggests that commuters dominate rentals during rush hours, with high usage around work start and end times
+    - There is a notable drop in demand from **10 AM to 4 PM**, especially between **10 AM and 2 PM**, with relatively lower counts (below **100,000**).These hours may see leisure riders or occasional users but are not as busy as the morning and evening peaks
+    - High demand continues into the evening (from **5 PM to 7 PM**), which indicates that users are likely renting bikes for commuting or post-work activities.Post-evening demand gradually drops from 9 PM to midnight, reflecting that rentals primarily align with working hours and peak commute times
+    - The early morning hours (**12 AM to 6 AM**) see significantly lower demand, with values well below 50,000 rentals per hour, indicating that bikes are underutilized overnight
       
   - Recommendations:
-    - Increase fleet availability during morning (7–9 AM) and evening (5–7 PM) peak hours when demand surges as it reduces the occurrence of zero availability and ensures higher completion rates during critical demand periods
+    - Increase fleet availability during morning (**7–9 AM**) and evening (**5–7 PM**) peak hours when demand surges as it reduces the occurrence of zero availability and ensures higher completion rates during critical demand periods
     - Introduce promotions or discounts during the midday lull (10 AM - 4 PM) to boost demand. Consider offering half-price rides or loyalty points for rentals during these hours as it helps to reduce idle bikes during off-peak hours and can smoothen out usage trends across the day
     - During peak hours, strategically distribute bikes around high-traffic areas like business districts, transportation hubs, and tourist spots. This ensures that supply matches demand and that customers have access to bikes when and where they need them the most
     - Implement surge pricing during peak hours (morning and evening) to balance supply and demand and incentivize drivers.It generates higher revenue during peak periods and attracts more drivers to meet the high demand
@@ -113,7 +113,7 @@ This project addresses these needs through **data exploration**, **visual storyt
    ![](weatherwise_casual_count_analysis1.PNG)
 
   - Business Insights:
-    - Casual Users rides drop drastically in bad weather: from 1.18M in clear sky to 158 in heavy rain
+    - Casual Users rides drop drastically in bad weather: from **1.18M in clear sky to 158** in heavy rain
     - Less impacted than casual users, but still decline with poor weather
 
   - Recommendations:
@@ -142,18 +142,18 @@ This project addresses these needs through **data exploration**, **visual storyt
 
   - Business Insights:
    - Humidity
-      - Distribution: Fairly wide, ranging from ~0 to ~100%
-      - Outliers: A few outliers present at the low end (around 0–10%)
-      - Most humidity readings are within a reasonable range (around 40%–90%)
+      - Distribution: Fairly wide, ranging from **~0 to ~100%**
+      - Outliers: A few outliers present at the low end (around **0–10%**)
+      - Most humidity readings are within a reasonable range (around **40%–90%**)
       - Very low humidity levels are rare and could represent sensor errors or unusual weather conditions
 
    - Temperature (temp)
-      - Distribution: Uniform spread from ~0°C to ~40°C
+      - Distribution: Uniform spread from **~0°C to ~40°C**
       - Outliers: None
       - Wide range indicates seasonality effects (winter to summer)
 
    - Windspeed
-      - Distribution: Most values between 0–30 km/h, but several high-value outliers (~50+)
+      - Distribution: Most values between **0–30 km/h**, but several high-value outliers **(~50+)**
       - Outliers: Many extreme values
       - Wind speed shows significant outliers, possibly due to storms or data recording issues
       - Investigate whether these outliers are valid
@@ -195,8 +195,8 @@ This project addresses these needs through **data exploration**, **visual storyt
       - Overstocking bikes during predicted bad weather should be avoided
 
     - Year
-      - Median rentals in 2012 are significantly higher than 2011
-      - More high-rental outliers in 2012
+      - Median rentals in **2012** are significantly higher than **2011**
+      - More high-rental outliers in **2012**
       - Business grew strongly in 2012—demand increased
 
 7. **Categorising numerical inputs and counting users based on the numerical inputs**
@@ -205,18 +205,18 @@ This project addresses these needs through **data exploration**, **visual storyt
 
    - Detailed Insights:
    - Average Count by Temperature Range
-       - There's a clear positive correlation between temperature and the average count. As temperatures increase, the average count also steadily increases. The highest average counts are observed in the warmer temperature ranges, specifically around 28-42°C for temp and 32-46°C for atemp
+       - There's a clear positive correlation between temperature and the average count. As temperatures increase, the average count also steadily increases. The highest average counts are observed in the warmer temperature ranges, specifically around **28-42°C** for temp and **32-46°C** for atemp
        - Expect the highest demand or activity during warmer periods. This is critical for resource allocation (e.g., staffing, inventory, vehicle availability for a service like bike rentals)
        - Warm weather is an ideal time for promotions and marketing campaigns to capitalize on the higher natural demand
        - Ensure that services are fully operational and well-maintained in anticipation of peak demand during these warmer months
        - India experiences significant variations in temperature. Knowing these optimal ranges helps target specific seasons or regions for increased focus
          
    - Average Count by Humidity Range:
-       - The average count peaks at moderate humidity levels (specifically, the 20.0-30.0% and 30.0-40.0% ranges), where it reaches the highest levels. As humidity either drops very low (below 10%) or rises significantly above 40-50%, the average count tends to decrease
+       - The average count peaks at moderate humidity levels (specifically, the **20.0-30.0%** and **30.0-40.0%** ranges), where it reaches the highest levels. As humidity either drops very low (below **10%**) or rises significantly above **40-50%**, the average count tends to decrease
        - Users seem most active or comfortable when humidity is moderate. Very dry or very humid conditions affect usage
 
    - Average Count by Windspeed Range:
-       - The average count appears to be relatively high across a broad range of moderate wind speeds (approximately 11.399 to 34.198 mph), with the highest counts observed around 17.099 to 28.498 mph. However, very low wind speeds (below 5-7 mph) and very high wind speeds (above 40 mph) show a decrease in the average count
+       - The average count appears to be relatively high across a broad range of moderate wind speeds (approximately **11.399 to 34.198 mph**), with the highest counts observed around **17.099 to 28.498 mph**. However, very low wind speeds (below **5-7 mph**) and very high wind speeds (above 40 mph) show a decrease in the average count
        - Users prefer moderate wind conditions rather than completely still or excessively windy conditions. Very strong winds clearly act as a deterrent
        - For outdoor services, high wind speeds can be a safety concern or simply uncomfortable, leading to reduced engagement
        - If relevant, providing real-time wind speed information could help users plan their activities or choose appropriate times
@@ -225,9 +225,9 @@ This project addresses these needs through **data exploration**, **visual storyt
    - Overall Business Recommendations:
      - Dynamic Resource Management: Use these insights to implement dynamic resource allocation. For example, increase staff, inventory, or operational hours during periods of optimal temperature, moderate humidity, and moderate wind speeds. Reduce resources during adverse conditions
      - Run promotions and targeted ads specifically during favorable weather conditions
-     - Offer incentives or alternative solutions during unfavorable weather to maintain engagemen
+     - Offer incentives or alternative solutions during unfavorable weather to maintain engagement
      - Since service is weather-dependent, consider integrating real-time weather forecasts into your customer-facing platforms
-     - Strategic Planning: Use these insights for long-term strategic planning, such as determining the best seasons for major product launches, expansions, or maintenance activities
+     - Use these insights for long-term strategic planning, such as determining the best seasons for major product launches, expansions, or maintenance activities
 
 8. **Scatterplots between dependent and independent variables**
 
@@ -236,23 +236,23 @@ This project addresses these needs through **data exploration**, **visual storyt
    - Temperature vs Count of users
       ![](ScatterplotofTemperaturevsUsers.PNG)
 
-   - Optimal Range: The highest number of users are observed when temperatures are approximately between 15°C and 30°C (or roughly 60°F to 85°F). This represents comfortable outdoor temperatures
-   - Impact of Extreme Temperatures: Both very cold (below 10°C) and very hot (above 35°C) temperatures lead to a significant decrease in user activity
+   - Optimal Range: The highest number of users are observed when temperatures are approximately between **15°C and 30°C** (or roughly **60°F to 85°F**). This represents comfortable outdoor temperatures
+   - Impact of Extreme Temperatures: Both very cold (below **10°C**) and very hot (above **35°C**) temperatures lead to a significant decrease in user activity
    - This is a crucial factor. Marketing campaigns and service availability should align with favorable temperature ranges. For example, offer discounts or special promotions during periods of optimal temperatures to maximize usage. During extreme temperatures, focus on retention strategies or alternative services if available
 
    - Humidity vs Count of users
      
       ![](ScatterplotofHumidityvsUsers.PNG)
      
-   - Optimal Range: The highest number of users (both registered and casual) are observed when humidity is roughly between 20% and 70%
-   - Impact of Extreme Humidity:User counts significantly drop when humidity is very low (below 10-20%) or very high (above 80%). This is particularly noticeable for both registered and casual users
+   - Optimal Range: The highest number of users (both registered and casual) are observed when humidity is roughly between **20% and 70%**
+   - Impact of Extreme Humidity:User counts significantly drop when humidity is very low (below **10-20%**) or very high (above **80%**). This is particularly noticeable for both registered and casual users
    - If the service is outdoor-related (e.g., bike sharing), understanding optimal humidity levels can help in resource allocation and marketing efforts. For instance, more bikes/resources might be needed on days with moderate humidity. Promotions could be targeted during these periods
 
    - Wndspeed vs Count of users
       ![](ScatterplotofWindspeedvsUsers.PNG)
 
    - Optimal Range: User activity is generally higher at lower wind speeds, peaking around 10-20 mph
-   - As wind speed increases beyond 20-25 mph, user counts, especially for casual users, show a noticeable decline. At very high wind speeds (above 40 mph), usage is minimal
+   - As wind speed increases beyond **20-25 mph**, user counts, especially for casual users, show a noticeable decline. At very high wind speeds (above **40 mph**), usage is minimal
    - High winds affects usage. If the service involves physical activity outdoors, consider weather alerts or alternative indoor options/promotions during high wind conditions. This information can also inform safety guidelines if applicable
 
 ## 🧪 A/B Testing and Statistical summaries
@@ -261,7 +261,7 @@ This project addresses these needs through **data exploration**, **visual storyt
       - Test Used: Mann Whitney - U test
       - Groups Compared: workingday = 1 vs workingday = 0
       - p-value: < 0.001
-      - Insight: Rentals are significantly higher on working days, mainly due to commuter (registered) users
+      - Insight: Rentals are significantly higher on wnly due to commuter (registered) userorking days, mais
       
    - Business Action:
       - Focus weekday marketing on office commuters
