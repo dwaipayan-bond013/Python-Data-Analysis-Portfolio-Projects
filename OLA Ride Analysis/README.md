@@ -3,7 +3,8 @@
 <img src="ola-case-study.jpg" width="1000"/>
 </p>
 
----
+## Business Problem
+OLA operates a ride-hailing platform where understanding ride demand fluctuations is key to ensuring service efficiency, driver availability, and customer satisfaction. The dataset includes ride counts across different months, times of day, and locations, highlighting trends and patterns in user booking behavior.The business questions answered are, how can OLA improve operational efficiency and revenue by identifying the key temporal and spatial patterns that drive ride demand in metropolitan areas?
 
 ## Project Overview
 The OLA Ride Analysis project is a data-driven initiative focused on optimizing ride-sharing operations through comprehensive analysis of historical usage patterns. In today’s fast-paced urban mobility landscape, understanding user behavior, driver dynamics, and operational efficiency is critical for delivering timely, reliable, and cost-effective transport services. This project addresses these challenges by dissecting key aspects of the OLA platform’s ride data at an hourly resolution.
