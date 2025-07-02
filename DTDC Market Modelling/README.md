@@ -183,6 +183,7 @@ DTDC faced challenges in understanding regional delivery performance, route inef
   
 
 3. **OSRM distance vs Actual distance analysis**
+   
    ![](StatewiseOSRMvsActualDistanceAnalysis.PNG)
 
    - Many states (e.g., Haryana, Assam, Orissa) show significantly higher actual distances than OSRM estimates.
@@ -192,6 +193,7 @@ DTDC faced challenges in understanding regional delivery performance, route inef
    - Real-world delivery paths often differ due to toll avoidance, road conditions, or vehicle restrictions
 
 4. **OSRM time vs Actual time analysis**
+   
    ![](StatewiseOSRMvsActualTimeAnalysis.PNG)
 
    - Widespread delay observed: actual times consistently exceed OSRM expectations
@@ -215,76 +217,82 @@ DTDC faced challenges in understanding regional delivery performance, route inef
    
    ![](DaywiseDeliveryAnalysis.PNG)
 
-   - Mid-Week Spike in Orders: Wednesday (16.54%) and Thursday (16.01%) have the highest order volumes
+   - Mid-Week Spike in Orders: Wednesday **(16.54%)** and Thursday **(16.01%)** have the highest order volumes
    - Indicates strong customer activity mid-week, possibly due to routine purchases, salary-week effects, or business restocking cycles
-   - End-of-Week Strength: Friday (15.02%) also shows strong order volume, possibly people preparing for the weekend
-   - Weekend Dip (Slight): Saturday (13.85%) and Sunday (13.49%) see slightly lower order rates compared to weekdays.Could be due to relaxation periods, lower B2B activity, or delivery slowdowns
-   - Beginning of Week Is Weakest: Monday (13.05%) and especially Tuesday (12.03%) show the lowest number of orders
+   - End-of-Week Strength: Friday **(15.02%)** also shows strong order volume, possibly people preparing for the weekend
+   - Weekend Dip (Slight): Saturday **(13.85%)** and Sunday **(13.49%)** see slightly lower order rates compared to weekdays.Could be due to relaxation periods, lower B2B activity, or delivery slowdowns
+   - Beginning of Week Is Weakest: Monday **(13.05%)** and especially Tuesday **(12.03%)** show the lowest number of orders
    - May reflect delayed decision-making after weekends or lower purchase intent early in the week
  
 
 ## Overall outcomes and Recommendations:
 
  1. Optimize Operations in Key Hubs
-Observation: Locations like Bilaspur (Haryana), Mankoli (Maharashtra), and Nelmangla (Karnataka) dominate both as source and destination hubs.
-
- Recommendation:
-   - Invest in expanding infrastructure and manpower at these critical nodes
-   - Implement automated sorting and tracking systems to manage high volumes efficiently
-   - Monitor these hubs for early identification of delays or operational bottlenecks
+    
+    - Observation: Locations like **Bilaspur (Haryana)**, **Mankoli (Maharashtra)**, and **Nelmangla (Karnataka)** dominate both as source and destination hubs
+      
+  - Recommendation:
+    - Invest in expanding infrastructure and manpower at these critical nodes
+    - Implement automated sorting and tracking systems to manage high volumes efficiently
+    - Monitor these hubs for early identification of delays or operational bottlenecks
 
  2. Align Resource Planning with Weekday Patterns
-Observation: Delivery volumes peak mid-week (Wed–Thu: >32.5%) and are lowest on Tuesdays (12%)
+    
+    - Observation: Delivery volumes peak mid-week **(Wed–Thu: >32.5%)** and are lowest on Tuesdays **(12%)**
 
- Recommendation:
-   - Allocate more delivery staff, vehicles, and support resources mid-week to meet demand
-   - Use off-peak days (Tuesdays, weekends) for route testing, training, or maintenance activities
+  - Recommendation:
+    - Allocate more delivery staff, vehicles, and support resources mid-week to meet demand
+    - Use off-peak days (Tuesdays, weekends) for route testing, training, or maintenance activities
 
  3. Plan for Seasonal Demand Surges
-Observation: ~87% of trips occur in September, indicating strong seasonal spikes
 
- Recommendation:
-   - Prepare a seasonal staffing and fleet augmentation plan for Q3
-   - Pre-position inventory in high-demand zones in August for proactive delivery
+    - Observation: **~87%** of trips occur in September, indicating strong seasonal spikes
+
+  - Recommendation:
+    - Prepare a seasonal staffing and fleet augmentation plan for Q3
+    - Pre-position inventory in high-demand zones in August for proactive delivery
 
  4. Minimize Actual vs OSRM Time and Distance Gaps
-Observation: Actual delivery times and distances are consistently higher than OSRM estimates across most states
 
- Recommendation:
-   - Conduct route audits and update mapping tools with real-time road intelligence
-   - Use AI-driven route optimization software that factors in traffic, roadblocks, and toll routes
-   - Partner with local logistics partners in high-deviation regions (e.g., Assam, Haryana)
+    - Observation: Actual delivery times and distances are consistently higher than OSRM estimates across most states
+
+  - Recommendation:
+    - Conduct route audits and update mapping tools with real-time road intelligence
+    - Use AI-driven route optimization software that factors in traffic, roadblocks, and toll routes
+    - Partner with local logistics partners in high-deviation regions (e.g., Assam, Haryana)
 
  5. Improve Full-Truckload (FTL) Efficiency
-Observation: FTL routes show major delays compared to planned OSRM time (by over 25–30%)
+    
+    - Observation: FTL routes show major delays compared to planned OSRM time **(by over 25–30%)**
 
- Recommendation:
-   - Implement better loading/unloading protocols and monitor dwell times
-   - Consider breaking FTLs into smaller shipments (LTL) where FTL is causing time loss
-   - Track FTL routes with GPS and geofencing to ensure schedule adherence
+  - Recommendation:
+    - Implement better loading/unloading protocols and monitor dwell times
+    - Consider breaking FTLs into smaller shipments (LTL) where FTL is causing time loss
+    - Track FTL routes with GPS and geofencing to ensure schedule adherence
 
  6. Expand in Low-Penetration States
-Observation: States like Tripura, Mizoram, and Nagaland have negligible delivery volumes (<10 trips)
+    
+    - Observation: States like Tripura, Mizoram, and Nagaland have negligible delivery volumes **(<10 trips)**
 
- Recommendation:
-   - Evaluate strategic partnerships or franchise models to expand reach in underserved regions
-   - Introduce incentivized delivery models or micro-warehousing to boost market entry
+  - Recommendation:
+    - Evaluate strategic partnerships or franchise models to expand reach in underserved regions
+    - Introduce incentivized delivery models or micro-warehousing to boost market entry
 
  7. Define and Improve SLA Compliance
-Observation: Significant deviation from planned time metrics can impact SLA commitments
+    
+    - Observation: Significant deviation from planned time metrics can impact SLA commitments
 
- Recommendation:
-   - Establish clear SLA definitions for different route types (FTL, carting)
-   - Monitor SLA compliance rates by route, state, and mode, and flag underperforming lanes
+  - Recommendation:
+    - Establish clear SLA definitions for different route types (FTL, carting)
+    - Monitor SLA compliance rates by route, state, and mode, and flag underperforming lanes
 
  8. Balance Source-Destination Network Load
-Observation: Delivery loads are heavy in Maharashtra and Karnataka both inbound and outbound
+     
+    - Observation: Delivery loads are heavy in Maharashtra and Karnataka both inbound and outbound
 
- Recommendation:
-   - Use reverse logistics strategies to optimize truck utilization on return routes
-   - Balance distribution load by exploring secondary hubs in adjacent states (e.g., Gujarat, MP)
-
----
+  - Recommendation:
+    - Use reverse logistics strategies to optimize truck utilization on return routes
+    - Balance distribution load by exploring secondary hubs in adjacent states (e.g., Gujarat, MP)
 
 ##  Conclusion
 
