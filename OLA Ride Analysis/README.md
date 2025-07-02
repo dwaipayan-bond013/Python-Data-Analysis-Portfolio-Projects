@@ -33,7 +33,7 @@ This project serves multiple use cases for stakeholders including:
 1. ![](TripRequestHourlyAnalysis.PNG)
 
 - Business Insights:
-  - Strong evening and late-night demand – indicative of work returns, events, and nightlife (11 PM (23:00): 184 requests, 7 PM (19:00): 156 requests)
+  - Strong evening and late-night demand – indicative of work returns, events, and nightlife **(11 PM (23:00): 184 requests, 7 PM (19:00): 156 requests)**
   - **5 PM to 2 AM** shows a consistent volume between 96–112 requests
   - Early night hours still show significant demand, requiring continued driver availability
   - **4 AM (9 requests)** and **5 AM (14 requests)** mark the lowest activity
@@ -55,21 +55,21 @@ This project serves multiple use cases for stakeholders including:
 2. ![](DriverAvailabilityvsRequestedTrips.PNG)
 
 - Business Insights:
-  - Late Night & Early Morning (0:00–5:00)
-     - Demand (Requests) is relatively high at 23:00 (184),00:00 (142) and 01:00 (96) but drops sharply from 2:00 to 5:00
-     - Driver availability matches well, with a slight oversupply from 03:00–05:00, e.g.: 04:00: 9 requests vs 9 drivers (balanced)
-     - There's a decent balance, though a slight under-supply during late-night rush (12 AM–2 AM) 
-  - Morning Hours (6:00–11:00)
-     - Driver count rises rapidly starting at 6 AM, reaching 129–133 between 10–12 AM, but requests remain low, e.g.: 09:00: 26 requests vs 110 drivers, 10:00: 28 requests vs 129 drivers
+  - Late Night & Early Morning **(0:00–5:00)**
+     - Demand (Requests) is relatively high at **23:00 (184),00:00 (142)** and **01:00 (96)** but drops sharply from **2:00 to 5:00**
+     - Driver availability matches well, with a slight oversupply from 03:00–05:00, e.g.: **04:00: 9 requests vs 9 drivers (balanced)**
+     - There's a decent balance, though a slight under-supply during late-night rush **(12 AM–2 AM)** 
+  - Morning Hours (**6:00–11:00**)
+     - Driver count rises rapidly starting at **6 AM**, reaching **129–133** between **10–12 AM**, but requests remain low, e.g.: **09:00: 26 requests vs 110 drivers, 10:00: 28 requests vs 129 drivers**
      - Significant driver over-supply during morning hours. Drivers may be idle or underutilized
-  - Afternoon Hours (12:00–17:00)
-     - Supply remains high (~120–165 drivers), but demand is only gradually rising eg. 14:00 & 15:00: 71 requests vs 125–139 drivers and 17:00: 98 requests vs 180 drivers
+  - Afternoon Hours **(12:00–17:00)**
+     - Supply remains high **(~120–165 drivers)**, but demand is only gradually rising eg. **14:00 & 15:00: 71 requests vs 125–139 drivers and 17:00: 98 requests vs 180 drivers**
      - Extended oversupply period during mid-day. Driver earnings may suffer due to low ride frequency
-  - Evening Peak (18:00–22:00)
-     - Demand and supply both peak, indicating solid performance eg. 18:00: 119 requests vs 174 drivers, 19:00: 156 requests vs 180 drivers
-  - High demand aligns well with supply till 9 PM. A slight driver shortfall at 10 PM may cause longer wait times or missed trips
-  - Late Night (23:00)
-     - 184 requests vs 119 drivers
+  - Evening Peak **(18:00–22:00)**
+     - Demand and supply both peak, indicating solid performance eg. **18:00: 119 requests vs 174 drivers, 19:00: 156 requests vs 180 drivers**
+  - High demand aligns well with supply till **9 PM**. A slight driver shortfall at 10 PM may cause longer wait times or missed trips
+  - Late Night **(23:00)**
+     - **184** requests vs **119** drivers
      - High demand and under-supply — one of the biggest gaps. This hour is a critical opportunity zone
 
 - Business Implications & Recommendations:
@@ -85,40 +85,40 @@ This project serves multiple use cases for stakeholders including:
    This bar chart compares total ride requests (user demand) and completed trips (fulfilled demand) per hour throughout the day. The difference between the two reflects the gap in service efficiency, highlighting periods of ride abandonment, unavailability, or system failure.
 
 - Business Insights:
-  - Midnight Surge (00:00–02:00)
-    - 00:00 (12 AM): 142 requests vs 102 completed → 72% fulfillment rate
-    - 01:00: 96 vs 71 → 74%
-    - 02:00: 100 vs 61 → 61%
-    - High demand, but only ~60–75% fulfillment. Indicates driver shortage or platform bottleneck during late-night hours
+  - Midnight Surge **(00:00–02:00)**
+    - **00:00 (12 AM): 142 requests vs 102 completed → 72% fulfillment rate**
+    - **01:00: 96 vs 71 → 74%**
+    - **02:00: 100 vs 61 → 61%**
+    - High demand, but only **~60–75%** fulfillment. Indicates driver shortage or platform bottleneck during late-night hours
 
-  - Early Morning Collapse (03:00–07:00)
-    - Requests drop to <30, but completions fall sharply
-    - 04:00: 9 requests, only 2 trips (22%)
-    - 05:00: 14 requests, only 4 trips (29%)
+  - Early Morning Collapse **(03:00–07:00)**
+    - Requests drop to **<30**, but completions fall sharply
+    - **04:00: 9 requests, only 2 trips (22%)**
+    - **05:00: 14 requests, only 4 trips (29%)**
     - Extremely low supply or system idling, even though small but critical demand (e.g. airport rides) exists
 
- - Morning Ramp-Up (08:00–12:00)
-   - Requests gradually rise to 47–53, but completions lag behind
-   - 10:00: 28 requests, 18 trips → 64%
-   - 11:00: 47 requests, 36 trips → 77%
+ - Morning Ramp-Up **(08:00–12:00)**
+   - Requests gradually rise to **47–53**, but completions lag behind
+   - **10:00: 28 requests, 18 trips → 64%**
+   - **11:00: 47 requests, 36 trips → 77%**
    - Mid-morning sees mild under-fulfillment. Gaps are smaller than late night but still present
 
- - Afternoon Stability (13:00–17:00)
+ - Afternoon Stability **(13:00–17:00)**
    - Fulfillment rate improves
-   - 14:00–15:00: ~70%
-   - 16:00: 82 requests vs 68 trips → 83%
-   - 17:00: 98 vs 78 → 80%
+   - **14:00–15:00: ~70%**
+   - **16:00: 82 requests vs 68 trips → 83%**
+   - **17:00: 98 vs 78 → 80%**
    - Service is more reliable in this period; demand and supply are relatively balanced
 
- - Evening Peak (18:00–22:00)
+ - Evening Peak **(18:00–22:00)**
    - Highest demand window of the day
-   - 19:00: 156 requests vs 120 trips → 77%
-   - 22:00: 174 vs 134 → 77%
-   - 21:00: 112 vs 88 → 79%
-   -  Consistently 20–30% of demand is unfulfilled, which can lead to high user dissatisfaction during rush hour
+   - **19:00: 156 requests vs 120 trips → 77%**
+   - **22:00: 174 vs 134 → 77%**
+   - **21:00: 112 vs 88 → 79%**
+   - Consistently **20–30%** of demand is unfulfilled, which can lead to high user dissatisfaction during rush hour
 
-  - Late Night (23:00)
-    - 184 requests vs 126 completions → 69% fulfillment
+  - Late Night **(23:00)**
+    - **184** requests vs 126 completions → **69%** fulfillment
     - One of the biggest demand-supply gaps of the day. Lost trips and user churn risk is high
 
   - Business Implications and Recommendations
@@ -131,29 +131,29 @@ This project serves multiple use cases for stakeholders including:
 
 - Business Insights
   - Midnight to Early Morning (00:00–06:00)
-    - 00:00: 339 eyeballs, 142 requests → 42% conversion
-    - 01:00: 207 eyeballs, 96 requests → 46%
-    - 04:00: 29 eyeballs, 9 requests → 31%
-    - 05:00: 42 eyeballs, 14 requests → 33%
-  - Late-night users show decent engagement, with 30–45% conversion. There's still over 50% drop-off — room for improvement
+    - **00:00: 339 eyeballs, 142 requests → 42% conversion**
+    - **01:00: 207 eyeballs, 96 requests → 46%**
+    - **04:00: 29 eyeballs, 9 requests → 31%**
+    - **05:00: 42 eyeballs, 14 requests → 33%**
+  - Late-night users show decent engagement, with 30–45% conversion. There's still over **50% drop-off** — room for improvement
 
- - Morning Dip (06:00–10:00)
-   - 08:00: 151 eyeballs, 29 requests → ~19%
-   - 09:00: 202 eyeballs, 26 requests → ~13%
-   - 10:00: 243 eyeballs, 28 requests → ~11%
- - Very low conversion during 6–10 AM despite high eyeball count aybe due too price surge, unavailability of drivers etc.
+ - Morning Dip **(06:00–10:00)**
+   - **08:00: 151 eyeballs, 29 requests → ~19%**
+   - **09:00: 202 eyeballs, 26 requests → ~13%**
+   - **10:00: 243 eyeballs, 28 requests → ~11%**
+ - Very low conversion during **6–10 AM*** despite high eyeball count aybe due too price surge, unavailability of drivers etc.
 
- - Midday to Afternoon (11:00–16:00)
-   - 13:00: 311 eyeballs, 55 requests → ~18%
-   - 14:00–16:00: ~330–360 eyeballs, ~70–80 requests → ~21–24%
+ - Midday to Afternoon **(11:00–16:00)**
+   - **13:00: 311 eyeballs, 55 requests → ~18%**
+   - **14:00–16:00: ~330–360 eyeballs, ~70–80 requests → ~21–24%**
  - Slightly improved conversion, but still less than 1 in 4 interested users request a ride.
 
- - Evening Peak (17:00–23:00)
-   - 18:00: 408 eyeballs, 119 requests → 29%
-   - 19:00: 447 eyeballs, 156 requests → 34.9%
-   - 22:00: 492 eyeballs, 174 requests → 35.3%
-   - 23:00: 488 eyeballs, 184 requests → 37.7%
- -  Highest engagement + highest conversions — but still under 40%. Strong opportunity for conversion optimization
+ - Evening Peak **(17:00–23:00)**
+   - **18:00: 408 eyeballs, 119 requests → 29%**
+   - **19:00: 447 eyeballs, 156 requests → 34.9%**
+   - **2:00: 492 eyeballs, 174 requests → 35.3%**
+   - **23:00: 488 eyeballs, 184 requests → 37.7%**
+ -  Highest engagement + highest conversions — but still under **40%**. Strong opportunity for conversion optimization
 
 - Business Implications and Recommendations
   - Investigate drop-off causes: Pricing, driver unavailability, app performance, or UX.
@@ -166,14 +166,14 @@ This project serves multiple use cases for stakeholders including:
 
 - Business Insights
   - Weekend Demand Spike (Fri–Sun)
-    - Saturday is the peak demand day with 626 ride requests (highest of all)
-    - Friday and Sunday follow with 377 and 272 requests respectively
-    - Over 55% of weekly demand is concentrated on just these 3 days
+    -** Saturday** is the peak demand day with **626** ride requests (highest of all)
+    - **Friday** and **Sunday** follow with **377** and **272** requests respectively
+    - Over **55%** of weekly demand is concentrated on just these 3 days
       
   - Weekday Slump (Mon–Thu)
-    - Monday is the lowest: Only 120 requests (just ~19% of Saturday's)
-    - Tuesday to Thursday hover between 133–168 requests
-    - Monday-to-Thursday period has consistently low demand, which might indicate less social/outing activity, Office commute may not be routed via OLA
+    - **Monday** is the lowest: Only **120** requests (just **~19% of Saturday's**)
+    - **Tuesday to Thursday** hover between **133–168** requests
+    - **Monday-to-Thursday** period has consistently low demand, which might indicate less social/outing activity, Office commute may not be routed via OLA
       
 - Business Implications and Recommendations
   - Increase driver availability on Friday evenings, Saturdays, and Sundays
@@ -187,12 +187,12 @@ This project serves multiple use cases for stakeholders including:
 6. ![](IncmpleteTripsDaywiseAnalysis.png)
 
 - Business Insights
-  - Saturday Spikes with 179 Incomplete Trips. It has more than 2.2× the incomplete trips of any other day
+  - **Saturday** Spikes with **179** Incomplete Trips. It has more than 2.2× the incomplete trips of any other day
   - Likely due to high demand and driver supply shortfalls or long wait times.
-  - Friday (79) and Sunday (68) also have above-average incomplete trips.Coincides with increased social/travel activity and likely surge pricing.
-  -  Users may abandon requests due to high wait times, Unavailable drivers, higher-than-expected fares (surge)
-  -  Monday and Wednesday show lowest incomplete rates — possibly due to lower demand and more available supply
-  -  Operational systems handle weekday loads better, indicating infrastructure sufficiency during low-demand periods
+  - **Friday (79)** and **Sunday (68)** also have above-average incomplete trips.Coincides with increased social/travel activity and likely surge pricing.
+  - Users may abandon requests due to high wait times, Unavailable drivers, higher-than-expected fares (surge)
+  - **Monday** and **Wednesday** show lowest incomplete rates — possibly due to lower demand and more available supply
+  - Operational systems handle weekday loads better, indicating infrastructure sufficiency during low-demand periods
 
 - Business Implications and Recommendations
   - Increase driver incentives and availability during high-failure days (Fri–Sun)
@@ -210,13 +210,13 @@ This project serves multiple use cases for stakeholders including:
     - There is a general upward trend: as the number of unique drivers increases, the number of requests also increases
     - This suggests that areas or times with more available drivers are associated with higher demand (more requests)
   - Saturation and Plateaus:
-    - After ~15–20 unique drivers, the number of requests doesn't always increase proportionally. There are several points where requests plateau or even drop
+    - After **~15–20** unique drivers, the number of requests doesn't always increase proportionally. There are several points where requests plateau or even drop
     - This could indicate diminishing returns — adding more drivers doesn't always yield more requests, especially in certain regions or time slots
   - Clustered Low Driver, Low Request Zones:
-    - A significant cluster of data points lies in the lower-left quadrant (0–10 drivers and 0–10 requests)
+    - A significant cluster of data points lies in the lower-left quadrant **(0–10 drivers and 0–10 requests)**
     - This may indicate low-demand regions or underserved zones. These zones could benefit from strategic interventions like promotions or better service reliability
   - Outliers and Anomalies:
-    - There are a few extreme values (e.g., 45+ requests with ~26 drivers), suggesting certain hotspots or peak-hour spikes that should be studied further
+    - There are a few extreme values (e.g., **45+ requests with ~26 drivers**), suggesting certain hotspots or peak-hour spikes that should be studied further
     - These might be linked to high-demand areas like commercial hubs, festivals, or weekends.
    
 - Business Implications and Recommendations
